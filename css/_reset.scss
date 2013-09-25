@@ -1,0 +1,26 @@
+html, body, div, span,
+h1,
+header, section, aside, article, footer, nav,
+a, img, figure, figcaption,
+ol, ul, li {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 100%;
+	font-family: inherit;
+	outline: 0;
+	font-weight: normal;
+	font-style: normal;
+	vertical-align: baseline;
+}
+
+/* html5 semantics tags */
+article, aside, figure, figcaption, footer, header, nav, section
+{
+	display: block
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%
+}

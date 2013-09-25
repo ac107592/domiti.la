@@ -1,0 +1,110 @@
+/* SITE */
+
+	Atualização: 25 / 9 / 13
+	Versão:      Café (0.1)
+	Língua:      Gaudéria
+	Doctype:     HTML5
+	Charset:     UTF-8 (sem BOM)
+	IDE:         Firebug, Sublime Text 3, git, FileZilla
+	Tools:       SASS-compass
+	Standards:   HTML5 + CSS3 + ARIA & Javascript 2.0
+
+
+
+/* FONTES DO HOTSITE */
+
+	https://github.com/ac107592/domiti.la
+
+
+
+/* TIME */
+
+	Dedicado a primeira e única viscondessa do Brasil...
+
+	Designer: André
+	Lacaio:   Régis
+
+
+
+/* FERRAMENTAS */
+
+	OptiPNG:        Otimizar imagens PNG
+	jpegoptim:      Otimizar imagens e suavizar o JPEG
+	Gimp:           Pra realizar ajustes finos na arte
+	InkScape:       Edição de SVG
+	Pinta:          Edição rápidas de imagens
+	freemind:       Organizar e estruturar o conteúdo
+	SASS-compass:   Limpar, organizar e compactar o CSS
+	BASH, uglifyjs: Compilar e compactar o JS
+	Web Developer:  Extensão do firefox de auxílio ao desenvolvimento
+	Outliner:       Extensão do chrome de auxílio ao SEO
+
+
+
+/* SCRIPTS AUXILIARES */
+
+
+
+/* RECOMENDAÇÕES */
+
+	developers.google.com/+/web/snippet/
+	schema.org/Event
+	microformats.org/wiki/rel-license
+	microformats.org/wiki/hcalendar
+
+
+
+/* TIPOGRAFIA */
+
+	google.com/fonts/specimen/Open+Sans
+
+
+
+/* FERRAMENTAS ON-LINE EMPREGADAS */
+
+	tools.dynamicdrive.com/favicon
+	petercollingridge.appspot.com/svg-optimiser
+	dataurl.net/#dataurlmaker
+	google.com/fonts/
+
+
+
+/* MÉTODOS */
+
+	Mobile first
+	Imagens SVG
+	Microformats
+	Safari Web Content Guide
+	HTML Outline
+	WAI-ARIA
+	Data URI scheme
+	CSS Sprites
+	Websafefonts
+	Graceful degradation
+	Unobtrusive Javascript
+
+
+
+
+              !         !          
+             ! !       ! !          
+            ! . !     ! . !          
+               ^^^^^^^^^ ^            
+             ^             ^          
+           ^  (0)       (0)  ^       
+          ^        ""         ^       
+         ^   ***************    ^     
+       ^   *                 *   ^    
+      ^   *   /\   /\   /\    *    ^   
+     ^   *                     *    ^
+    ^   *   /\   /\   /\   /\   *    ^
+   ^   *                         *    ^
+   ^  *                           *   ^
+   ^  *                           *   ^
+    ^ *                           *  ^  
+     ^*                           * ^ 
+      ^ *                        * ^
+      ^  *                      *  ^
+        ^  *       ) (         * ^
+            ^^^^^^^^ ^^^^^^^^^ 
+             Tonari no Totoro
