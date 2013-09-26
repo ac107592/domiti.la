@@ -7,8 +7,9 @@ ESTRUTURA
 
 
 [slide 2 - show]
-counter
-	prox: onde, quando
+contador regressivo pro prox show
+google maps
+	quando, onde, quanto
 	nome na lista
 
 
@@ -29,16 +30,24 @@ ROADMAP
 
 - [TXT]	conteúdo
 - [SEO]	meta-tags
-- [PNG]	favicon
+- [PNG]	banners
+- [ICO]	favicon
 - [HTM]	semantica html
 - [HTM]	outline
-- [SEO]	ARIA e microformats
+
 - [CSS]	tipografia
 - [CSS]	responsividade / fluida
-- [HTM]	formulario
+- [SVG] logo
+- [HTM]	tab musica / letra
+- [HTM]	animação capa
+- [HTM]	tab ficha tecnica
 - [JS]	tela modal
 - [JS]	parallax
+- [JPG] fundo
 - [JS]	imagens responsivas
+- [SEO]	ARIA e microformats
+- [GLG]	Analitycs
+- [GLG]	Webmaster tools
 
 
 PASSOS

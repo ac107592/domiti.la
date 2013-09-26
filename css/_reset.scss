@@ -1,12 +1,11 @@
-html, body, div, span,
+html, body, div,
 h1,
-header, section, aside, article, footer, nav,
-a, img, figure, figcaption,
-ol, ul, li {
+section, article, nav,
+a, img,
+ul, li {
 	margin: 0;
 	padding: 0;
 	border: none;
-	font-size: 100%;
 	font-family: inherit;
 	outline: 0;
 	font-weight: normal;
@@ -14,13 +13,108 @@ ol, ul, li {
 	vertical-align: baseline;
 }
 
-/* html5 semantics tags */
-article, aside, figure, figcaption, footer, header, nav, section
+article, nav, section
 {
 	display: block
 }
 
 html {
+	font-size: 100%;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%
 }
+
+
+// Melhora legibilidade
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+//strong {
+//	font-weight: bold;
+//}
+
+// IE6/7
+ol,
+ul {
+	margin: 1em 0;
+	padding: 0 0 0 40px;
+}
+
+// Ajusta IE7
+nav ul,
+nav ol {
+	list-style: none;
+	list-style-image: none;
+}
+
+// Ajusta IE6/7
+//form {
+//	margin: 0;
+//}
+
+
+// Melhora e ajusta IE6/7, FF3+, S5, Chrome
+button {
+//input,
+//select,
+//textarea {
+	font-size: 100%;
+	line-height: normal;
+	margin: 0;
+	vertical-align: baseline;
+	*vertical-align: middle;
+	cursor: pointer;
+	-webkit-appearance: button;
+	*overflow: visible;
+}
+
+// Ajusta FF3/4
+//button,
+//input {
+//	line-height: normal;
+//}
+
+// Ajusta IE7/8/9
+//button,
+//input[type="button"],
+//input[type="reset"],
+//input[type="submit"] {
+//	cursor: pointer;
+//	-webkit-appearance: button;
+//	*overflow: visible;
+//}
+
+//input[type="checkbox"],
+//input[type="radio"] {
+//	box-sizing: border-box;
+//	padding: 0;
+//	*height: 13px;
+//	*width: 13px;
+//}
+
+
+
+// Ajusta FF3+
+// www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+button::-moz-focus-inner {
+//input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+// Ajusta IE6/7/8/9
+//textarea {
+//	overflow: auto;
+//	vertical-align: top;
+//}
+
+//table {
+//	border-collapse: collapse;
+//	border-spacing: 0;
+//}

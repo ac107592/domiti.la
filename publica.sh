@@ -23,6 +23,7 @@ echo -e "[ \e[01;30mOK\e[00m ] cache limpa..."
 # publica arquivos
 cp html/* ../www
 cp imagens/* ../www/@
+chown -R regis.apache ../www
 echo -e "[ \e[01;30mOK\e[00m ] arquivos estáticos publicados..."
 compass compile
 

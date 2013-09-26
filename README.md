@@ -25,8 +25,6 @@ chmod u+x publica.sh
 
 	developers.google.com/+/web/snippet/
 	schema.org/Event
-	microformats.org/wiki/rel-license
-	microformats.org/wiki/hcalendar
 
 
 
@@ -38,6 +36,10 @@ chmod u+x publica.sh
 
 ## FERRAMENTAS ON-LINE EMPREGADAS
 
+	fontsquirrel.com/tools/webfont-generator
+	validator.w3.org
+	colorschemedesigner.com
+	kraken.io
 	tools.dynamicdrive.com/favicon
 	petercollingridge.appspot.com/svg-optimiser
 	dataurl.net/#dataurlmaker
