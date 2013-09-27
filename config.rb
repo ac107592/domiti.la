@@ -4,7 +4,7 @@
 http_path = "/"
 css_dir = "../www/@"
 sass_dir = "css"
-images_dir = "man/imagens"
+images_dir = "sprites"
 javascripts_dir = "../www/@"
 
 # You can select your preferred output style here (can be overridden via the command line):

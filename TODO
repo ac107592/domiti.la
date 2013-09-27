@@ -26,9 +26,13 @@ google maps
 	contato
 
 
+[slide 5 - agradecimentos]
+	amigos
+	share
+
 ROADMAP
 
-- [TXT]	conteúdo
+- [TXT]	conteúdo / estrutura
 - [SEO]	meta-tags
 - [PNG]	banners
 - [ICO]	favicon
@@ -37,6 +41,7 @@ ROADMAP
 
 - [CSS]	tipografia
 - [CSS]	responsividade / fluida
+- [CSS]	cores
 - [SVG] logo
 - [HTM]	tab musica / letra
 - [HTM]	animação capa

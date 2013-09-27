@@ -3,6 +3,18 @@
 
 Estes são os códigos fontes do front-end do hotsite domiti.la. Basicamente uma *landpage* de página estática responsiva / fluída escrita em HTML5 e CSS3 com os estilos compilados em SASS Compass.
 
+carregamento deve ser progressivo
+
+A própria ordem de carregamento foi pensada para não onerar uma pessoa que esteja vendo o site em seu celular.
+
+Os breakpoints escolhidos para este projeto foram:
+
+    Mobile
+    Mobile Landscape
+    Tablet
+    Tablet Landscape
+    Desktop
+
 
 # Compilação
 
