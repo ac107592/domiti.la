@@ -1,11 +1,11 @@
 
 # Documentação
 
-Estes são os códigos fontes do front-end do hotsite domiti.la. Basicamente uma *landpage* de página estática responsiva / fluída escrita em HTML5 e CSS3 com os estilos compilados em SASS Compass.
+Estes são os códigos fontes do front-end do hotsite domiti.la. Uma *landpage* de página estática responsiva / fluída escrita em HTML5 e CSS3 com os estilos compilados em SASS Compass.
 
-Os estilos foram organizados para não onerar uma pessoa que esteja vendo o site em seu celular.
+A folha de estilos está organizada para não onerar uma pessoa que esteja vendo o site em seu celular.
 
-Os breakpoints escolhidos para este projeto foram:
+Os *breakpoints* escolhidos para este projeto foram:
 
 - Mobile
 - Mobile Landscape
@@ -87,17 +87,14 @@ chmod u+x publica.sh
 
 # TODO
 
+- [JS]	playlist
+- [CSS]	menu mobi
 - [CSS]	tipografia
 - [CSS]	responsividade / fluida
-- [CSS]	cores
-- [SVG] logo
-- [HTM]	tab musica / letra
-- [HTM]	animação capa
-- [HTM]	tab ficha tecnica
 - [JS]	tela modal
 - [JS]	parallax
 - [JPG] fundo
 - [JS]	imagens responsivas
-- [SEO]	ARIA e microformats
 - [GLG]	Analitycs
 - [GLG]	Webmaster tools
+

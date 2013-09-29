@@ -47,12 +47,17 @@ Options -Indexes
 	<FilesMatch "\.(js|css|xml)$">
 		Header append Vary: Accept-Encoding
 	</FilesMatch>
+
+	<FilesMatch "\.(eot|font.css|otf|ttc|ttf|woff)$">
+		Header set Access-Control-Allow-Origin "*"
+	</FilesMatch>
+
 </IfModule>
 
 
 
 <IfModule mod_deflate.c>
-	AddOutputFilterByType DEFLATE text/html text/css text/javascript text/plain text/xml text/csv application/rss+xml application/xml application/octet-stream application/x-font-woff
+	AddOutputFilterByType DEFLATE text/html text/css text/javascript text/plain text/xml application/rss+xml application/xml application/octet-stream application/x-font-woff
 
 	BrowserMatch ^Mozilla/4 gzip-only-text/html
 	BrowserMatch ^Mozilla/4\.0[678] no-gzip

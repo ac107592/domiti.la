@@ -43,8 +43,7 @@
 
 	<link rel="author" href="https://plus.google.com/u/0/104078266813011495652"/>
 	<link rel="author" href="humans.txt"/>
-	<link rel="publisher" href="https://plus.google.com/u/0/104078266813011495652"/>
-	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
@@ -52,12 +51,12 @@
 	<h1 itemprop="name" class="oculto">Lançamento EP 1 ~ A Marquesa</h1>
 
 	<nav>
-		<h1><a href="#inicio" title="Voltar ao início">Litera</a></h1>
+		<h1><a class="scroll" href="#inicio" title="Voltar ao início">Litera</a></h1>
 		<ul>
-			<li><a href="#show" title="Veja o quando, onde e quanto">informações</a></li>
-			<li><a href="#letras" title="Acompanhe as letras">letras</a></li>
-			<li><a href="#banda" title="Ficha técnica do projeto">banda</a></li>
-			<li><a href="#obrigado" title="Um momento de gratidão">agradecimentos</a></li>
+			<li><a class="scroll" href="#show" title="Veja o quando, onde e quanto">show</a></li>
+			<li><a class="scroll" href="#letras" title="Acompanhe as letras">letras</a></li>
+			<li><a class="scroll" href="#banda" title="Ficha técnica do projeto">banda</a></li>
+			<li><a class="scroll" href="#obrigado" title="Um momento de gratidão">lado b</a></li>
 		</ul>
 	</nav>
 
@@ -78,7 +77,7 @@
 			<p><strong>20$00</strong> na hora</p>
 		</aside>
 
-<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fliterarock&amp;width=224&amp;colorscheme=light&amp;show_faces=false&amp;stream=false&amp;header=false&amp;height=260"></iframe>
+		<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fliterarock&amp;width=224&amp;colorscheme=light&amp;show_faces=false&amp;stream=false&amp;header=false&amp;height=260"></iframe>
 
 	</section>
 
@@ -88,8 +87,8 @@
 		<section itemprop="startDate" content="2016-04-21T20:00">
 			<h1>Quando</h1>
 
-			<p>23.10</p>
-			<p>23hs</p>
+			<p>30<sup>out</sup></p>
+			<p>23<sup>hs</sup></p>
 			<p><a href="http://www.google.com/calendar/event?action=TEMPLATE&amp;text=Lan%C3%A7amento%20do%20EP%201%20~%20A%20Marquesa&amp;dates=20131023T233000Z/20131024T010000Z&amp;details=Lan%C3%A7amento%20do%20EP&amp;location=Dhomba&amp;trp=false&amp;sprop=hotsite%20do%20disco%20Domitila&amp;sprop=name:http%3A%2F%2Fdomiti.la%2F" target="_blank"><img src="//www.google.com/calendar/images/ext/gc_button2.gif" alt="Agendar no google calendar"></a></p>
 		</section>
 
@@ -103,8 +102,8 @@
 		<section itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
 			<h1>Quanto</h1>
 
-			<p itemprop="lowPrice">20 contos, antecipado</p>
-			<p itemprop="offerCount">25 réis, na hora</p>
+			<p itemprop="lowPrice">15 contos, antecipado</p>
+			<p itemprop="offerCount">20 réis, na hora</p>
 			<p><button type="button">Inserir o nome na lista</button></p>
 		</section>
 	</article>
@@ -114,9 +113,11 @@
 	<section class="slide" id="letras">
 		<h1>Músicas do EP 1</h1>
 
-		<div class="ac hrz">
-			<section id="mergulho" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">
-				<h1><a href="#mergulho" itemprop="name">Mergulho</a></h1>
+		<div class="ac">
+			<div>
+			<input id="ac-1" name="rletras" type="radio" checked="checked"/>
+			<label for="ac-1">Mergulho</label>
+			<section class="ac-peq">
 <p>primeira vez, tanta fascinação<br>
 de serenas ondas, desde então<br>
 joguei-me ao mar além da arrebentação<br>
@@ -132,11 +133,14 @@ disfarça e me chama, não faz esse drama</p>
 
 <p>não leve a mal, to na arrebentação<br>
 to levando junto toda nossa paixão</p>
-<p><small itemprop="author">André Neto / Lucas Rangel</small></p>
+<p><small>André Neto / Lucas Rangel</small></p>
 			</section>
+			</div>
 
-			<section id="bercy" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">
-				<h1><a href="#bercy" itemprop="name">Bercy</a></h1>
+			<div>
+			<input id="ac-2" name="rletras" type="radio"/>
+			<label for="ac-2">Bercy</label>
+			<section class="ac-peq">
 <p>eu sempre te falei<br>
 tudo que passei<br>
 pra quantos caras dei</p>
@@ -167,11 +171,14 @@ sentar sobre suas pernas<br>
 sei que vai lembrar<br>
 da trouxa aqui<br>
 que te guardou dentro o que pôde</p>
-<p><small itemprop="author">André Neto</small></p>
+<p><small>André Neto</small></p>
 			</section>
+			</div>
 
-			<section id="domitila" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">
-				<h1><a href="#domitila" itemprop="name">Domitila</a></h1>
+			<div>
+			<input id="ac-3" name="rletras" type="radio"/>
+			<label for="ac-3">Domitila</label>
+			<section class="ac-peq">
 <p>Ela sabe que se esforça a cada dia mais<br>
 e que suas manias são iguais<br>
 se for verdade um dia, fugir da rotina<br>
@@ -188,11 +195,14 @@ e ela sabe que precisa de um pouco mais</p>
 <p>ela diz que busca nele um cara alto astral<br>
 que seja mais presente e coisa tal<br>
 que possa dividir, viver em paz.</p>
-<p><small itemprop="author">André Neto / Thiago Marques</small></p>
+<p><small>André Neto / Thiago Marques</small></p>
 			</section>
+			</div>
 
-			<section id="sofa" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">
-				<h1><a href="#sofa" itemprop="name">Sofá</a></h1>
+			<div>
+			<input id="ac-4" name="rletras" type="radio"/>
+			<label for="ac-4">Sofá</label>
+			<section class="ac-peq">
 <p>só vim buscar minha bici<br>
 meu frigi, meu som, sofá</p>
 
@@ -201,8 +211,10 @@ mil litros pra te afogar</p>
 
 <p>se não for mais meu<br>
 eu, ninguém terá jamais</p>
-<p><small itemprop="author">André Neto</small></p>
+<p><small>André Neto</small></p>
 			</section>
+			</div>
+
 		</div>
 
 	</section>
@@ -212,17 +224,22 @@ eu, ninguém terá jamais</p>
 	<section class="slide" id="banda">
 		<h1>Ficha tecnica</h1>
 
-		<div class="ac vtl">
-			<section id="producao">
-				<h1><a href="#producao">Produção</a></h1>
+		<div class="ac">
+			<div>
+			<input id="ac-5" name="rbanda" type="radio" checked="checked"/>
+			<label for="ac-5">Produção</label>
+			<section class="ac-peq">
 <p>Produzido entre março e agosto de 2013 no Estudio12 experiênciasonora, Porto Alegre - RS - Brasil<br>
 Gravado por Guilherme Wallau, Marcelo Fruet e Átila Viana<br>
 Mixado e produzido por Marcelo Fruet<br>
 Assistente de gravação: Guilherme Wallau</p>
 			</section>
+			</div>
 
-			<section id="composicao">
-				<h1><a href="#composicao">Composição</a></h1>
+			<div>
+			<input id="ac-6" name="rbanda" type="radio"/>
+			<label for="ac-6">Composição</label>
+			<section class="ac-peq">
 <p>Arranjos de cordas e programação eletrônica por Marcelo Fruet<br>
 Backing em Bercy e em Domitila, teclados em Domitila, kazoo em Sofá, guitarras adicionais por Marcelo Fruet<br>
 Orgãos e Synths em Bercy por Marcelo Fruet e Átila Viana<br>
@@ -231,9 +248,12 @@ Wurlitzer e Rhodes em Bercy por Fernando Spillari</p>
 <p>Masterização em Bercy, Mergulho e Sofá por Marcos Abreu<br>
 Masterização de Domitila por Dave Locke @ JP Masters, na Carolina do Norte (EUA)</p>
 			</section>
+			</div>
 
-			<section id="andre">
-				<h1><a href="#andre">André</a></h1>
+			<div>
+			<input id="ac-7" name="rbanda" type="radio"/>
+			<label for="ac-7">André</label>
+			<section class="ac-peq">
 <p>A vida tem a cor que você pintar…</p>
 
 <p>sou gaúcho de porto alegre. vocalista e guitarrista, comecei tocando em uma banda de grunge chamada "absolon". hoje a banda não existe mais. foi a minha primeira tentativa de fazer alguma coisa com música. logo depois nasceu a "lítera", com a proposta de ser algo bem mais simples mas marcante. e tem sido… pelo menos pra mim.</p>
@@ -243,9 +263,12 @@ Masterização de Domitila por Dave Locke @ JP Masters, na Carolina do Norte (EU
 	<a target="_blank" title="Facebook pessoal" href="http://www.facebook.com/literaneto">fb.com/literaneto</a>
 </p>
 			</section>
+			</div>
 
-			<section id="rodrigo">
-				<h1><a href="#rodrigo">Rodrigo</a></h1>
+			<div>
+			<input id="ac-8" name="rbanda" type="radio"/>
+			<label for="ac-8">Rodrigo</label>
+			<section class="ac-peq">
 <p>Quem acredita sempre alcança…</p>
 
 <p>um grande consumidor e apreciador de música, sem pré-conceitos, passando do dream theater a legião urbana, do pantera a chico buarque, de angra a los hermanos e roupa nova, absorvendo tudo que há de bom em cada estilo. tudo que for de bom gosto é bem vindo. como pessoa, um ser honesto, divertido, personalidade forte, que defende seus ideais e acredita cegamente em seus sonhos e objetivos.</p>
@@ -255,24 +278,32 @@ Masterização de Domitila por Dave Locke @ JP Masters, na Carolina do Norte (EU
 	<a target="_blank" title="Facebook pessoal" href="http://www.facebook.com/rodrigo.bonjour">fb.com/rodrigo.bonjour</a>
 </p>
 			</section>
+			</div>
 
-			<section id="lucas">
-				<h1><a href="#lucas">Lucas</a></h1>
+			<div>
+			<input id="ac-9" name="rbanda" type="radio"/>
+			<label for="ac-9">Lucas</label>
+			<section class="ac-peq">
 <p>opte por aquilo que faz o seu coração vibrar… Apesar de todas as conseqüências.</p>
 
 <p>Nascido e criado em Porto Alegre, sempre tive a música como um elemento essencial na minha vida. Mas foi depois de algumas andanças por esse mundo que eu descobri que a música tinha se tornado mais do que um hobby. Tenho algumas paixões na minha vida, uma delas com certeza é a Lítera.</p>
 
 <p><a target="_blank" title="Facebook pessoal" href="http://www.facebook.com/kanan.pinto">fb.com/kanan.pinto</a></p>
 			</section>
+			</div>
 
-			<section id="thiago">
-				<h1><a href="#thiago">Thiago</a></h1>
+			<div>
+			<input id="ac-10" name="rbanda" type="radio"/>
+			<label for="ac-10">Thiago</label>
+			<section class="ac-peq">
 <p>…o que eu mais quero é provar pra todo mundo que eu não preciso provar nada pra ninguém.</p>
 
 <p>ainda em estudo…</p>
 
 <p><a target="_blank" title="Twitter pessoal" href="http://twitter.com/ThiagoCamposM">@ThiagoCamposM</a></p>
 			</section>
+			</div>
+
 		</div>
 
 	</section>
@@ -284,11 +315,19 @@ Masterização de Domitila por Dave Locke @ JP Masters, na Carolina do Norte (EU
 
 <p>Obrigado mais que especial para:</p>
 
-<p>Leticia Vilhalba Prestes, Luciana Tavares, Luana Vargas Fernandes, Felipe Fredo Naciuk, Laila Garroni, Cibele Toledo, Karine Bonjour, Roberto Landell de Moura, Julio Cezar Camarotto, Maria Carolina Higo, Diego Naveen Moreira Rosa, Bruno Valenti, Anderson Ceresa, João Paulo Ferraresi Dullius, Adelino Celestino Bilhalva Junior, Régis Araújo, Fabiano Girard Palma, Róger dos Santos, Ricardo Dal Santo, Rafael Mallmann, Raquel do Carmo Pereira, Marcelo Mello de Carvalho, Ana Priscila Costa, Liziane Hernandez Bonjour, Guilherme Behmer, Mariana Fagundes Martinez, Jussara Luiza Viero Hernandez, Gyan Dayita, Alexandra Lorandi Macedo, Paulo Sigales, Allan Hernandez, Pedro Marques, Fernando Machado da Costa, Mauro André Flores dos Santos, Rosalva Garibaldi Schilling, Herminia Pereira, Rosalva Garibaldi Schilling, André Fernando Barcellos, Guilherme Rodrigues, Veronica Veiga, João Paulo Ferraresi Dullius, Jaqueline Insaurriaga Silveira, Vanessa Fernandes, Aruna Rozales, Renato de Aguiar Siqueira, Totoro e Thaís Fabbri.</p>
+<blockquote>Leticia Vilhalba Prestes, Luciana Tavares, Luana Vargas Fernandes, Felipe Fredo Naciuk, Laila Garroni, Cibele Toledo, Karine Bonjour, Roberto Landell de Moura, Julio Cezar Camarotto, Maria Carolina Higo, Diego Naveen Moreira Rosa, Bruno Valenti, Anderson Ceresa, João Paulo Ferraresi Dullius, Adelino Celestino Bilhalva Junior, Régis Araújo, Fabiano Girard Palma, Róger dos Santos, Ricardo Dal Santo, Rafael Mallmann, Raquel do Carmo Pereira, Marcelo Mello de Carvalho, Ana Priscila Costa, Liziane Hernandez Bonjour, Guilherme Behmer, Mariana Fagundes Martinez, Jussara Luiza Viero Hernandez, Gyan Dayita, Alexandra Lorandi Macedo, Paulo Sigales, Allan Hernandez, Pedro Marques, Fernando Machado da Costa, Mauro André Flores dos Santos, Rosalva Garibaldi Schilling, Herminia Pereira, Rosalva Garibaldi Schilling, André Fernando Barcellos, Guilherme Rodrigues, Veronica Veiga, João Paulo Ferraresi Dullius, Jaqueline Insaurriaga Silveira, Vanessa Fernandes, Aruna Rozales, Renato de Aguiar Siqueira, Totoro e Thaís Fabbri.</blockquote>
 
 <p>Vocês sabem o que isso significou pra nós. Mais do que isso, vocês sabem de onde a gente veio, e precisamos lembrar que tudo seria mais difícil sem vocês. Muito obrigado do fundo do coração.</p>
+
+<p>
+	<a target="_blank" title="Twitter da banda" href="http://twitter.com/litera">@litera</a>
+	<a target="_blank" title="Facebook da banda" href="http://www.facebook.com/litera">fb.com/litera</a>
+</p>
+
+<p><a target="_blank" title="Site oficial da banda" href="http://litera.mus.br">litera.mus.br</a></p>
 	</section>
 
+<script src='@/scripts.min.js'></script>
 
 </body>
 </html>

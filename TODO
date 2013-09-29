@@ -30,6 +30,7 @@ google maps
 	amigos
 	share
 
+
 ROADMAP
 
 - [TXT]	conteúdo / estrutura
@@ -38,41 +39,24 @@ ROADMAP
 - [ICO]	favicon
 - [HTM]	semantica html
 - [HTM]	outline
-
-- [CSS]	tipografia
-- [CSS]	responsividade / fluida
 - [CSS]	cores
 - [SVG] logo
-- [HTM]	tab musica / letra
-- [HTM]	animação capa
-- [HTM]	tab ficha tecnica
+- [HTM]	tab letra / ficha
+- [SEO]	microformats
+- [JS]	transição suave / navegação
+
+- [JS]	playlist
+- [CSS]	menu mobi
+- [CSS]	tipografia
+- [CSS]	responsividade / fluida
 - [JS]	tela modal
 - [JS]	parallax
 - [JPG] fundo
 - [JS]	imagens responsivas
-- [SEO]	ARIA e microformats
 - [GLG]	Analitycs
 - [GLG]	Webmaster tools
 
 
 PASSOS
 
-- criar img promo redes
-	face 300x300
-	twit 280x150
-	prmo 500x400
-- favicon
-	ico
-	apple
-		60x2
-		76x2
-		120x2
-		152x2
-		320x480 [startup]
 - atualizar wiki... http://pt.wikipedia.org/wiki/Domitila_de_Castro_Canto_e_Melo#Representa.C3.A7.C3.B5es_na_cultura
-
-
-
-
-
-
