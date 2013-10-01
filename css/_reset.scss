@@ -42,9 +42,9 @@ a:active {
 	outline: 0;
 }
 
-//strong {
-//	font-weight: bold;
-//}
+strong {
+	font-weight: bold;
+}
 
 // IE6/7
 ol,
@@ -129,7 +129,7 @@ button::-moz-focus-inner {
 
 iframe { overflow:hidden; border: none; width: 100%; min-height: 190px }
 
-.oculto {
+.outline {
 	display: none;
 }
 

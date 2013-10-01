@@ -48,32 +48,32 @@
 
 <body>
 
-	<h1 itemprop="name" class="oculto">Lançamento EP 1 ~ A Marquesa</h1>
+	<h1 itemprop="name" class="outline">Lançamento EP 1 ~ A Marquesa</h1>
+	<p id="tit-mobi">litera</p>
 
 	<input type="checkbox" id="bPlaylist" hidden>
 	<input type="checkbox" id="bMenu" hidden>
+
 	<aside class="menu esq">
-		<h2>Side Menu</h2>
-		<ul>
-			<li><a href="#" data-value="item 1">item 1</a></li>
-			<li><a href="#" data-value="very long item 2">very long item 2</a></li>
-			<li><a href="#" data-value="long item 3">long item 3</a></li>
-			<li><a href="#" data-value="item 4">item 4</a></li>
-		</ul>
+		<h2 class="outline">Escute</h2>
+
+		<iframe src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F8069942"></iframe>
 	</aside>
+
 	<aside class="menu dir">
-		<h2>Side Menu</h2>
+		<h2 class="outline">Conheça</h2>
 		<label for="bMenu">&minus;</label>
 		<ul>
-			<li><a href="#" data-value="item 1">item 1</a></li>
-			<li><a href="#" data-value="very long item 2">very long item 2</a></li>
-			<li><a href="#" data-value="long item 3">long item 3</a></li>
-			<li><a href="#" data-value="item 4">item 4</a></li>
+			<li><a class="scroll" href="#show" title="Veja o quando, onde e quanto" data-value="show">show</a></li>
+			<li><a class="scroll" href="#letras" title="Acompanhe as letras" data-value="letras">letras</a></li>
+			<li><a class="scroll" href="#banda" title="Ficha técnica do projeto" data-value="banda">banda</a></li>
+			<li><a class="scroll" href="#obrigado" title="Um momento de gratidão" data-value="lado b">lado b</a></li>
 		</ul>
 	</aside>
 
-		<label class="menuBtn floatr" for="bMenu">&minus;</label>
-		<label class="menuBtn playlist" for="bPlaylist"></label>
+	<label class="menuBtn floatr" for="bMenu">&minus;</label>
+	<label class="menuBtn playlist" for="bPlaylist"></label>
+
 	<div id="conteudo">
 
 		<nav>
@@ -86,19 +86,14 @@
 			</ul>
 		</nav>
 
-		<div id="playlist">
-			<iframe src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F8069942"></iframe>
-
-			<a href="http://snd.sc/170vpqg" id="controle" title="Ouça as músicas">Ouvir</a>
-		</div>
 
 		<section class="slide" id="inicio">
-			<h1>EP 1 ~ A Marquesa</h1>
+			<h1>EP 1 <span id="domitila">~ </span>A Marquesa</h1>
 			<aside>
-				<h1>Lançamento 23 de OUT</h1>
+				<h1><small>Lanc,amento</small> 30 de OUT</h1>
 				<p>Gravado por Guilherme Wallau, Marcelo Fruet e Átila Viana</p>
 				<p>01 Mergulho 02 Bercy 03 Domitila 04 Sofá</p>
-				<p><strong>Abertura</strong> Isidoron Pilsen</p>
+				<p><strong>Abertura</strong> Tarsila</p>
 				<p><strong>15$00</strong> antecipado</p>
 				<p><strong>20$00</strong> na hora</p>
 			</aside>
@@ -109,7 +104,8 @@
 
 
 		<article class="slide" id="show">
-			<h1>Proximo show</h1>
+			<h1>Pro'ximo show</h1>
+
 			<section itemprop="startDate" content="2016-04-21T20:00">
 				<h1>Quando</h1>
 
@@ -122,7 +118,8 @@
 				<h1>Onde</h1>
 
 				<p itemprop="address">Lima e Silva, 1037</p>
-				<p><iframe src="http://bit.ly/1bIw5nO"></iframe><br><a itemprop="url" href="http://goo.gl/maps/JxMXY">Ver mapa maior</a></p>
+<!--				<p><iframe src="http://bit.ly/1bIw5nO"></iframe><br>
+				<a itemprop="url" href="http://goo.gl/maps/JxMXY">Ver mapa maior</a></p>-->
 			</section>
 
 			<section itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
@@ -130,36 +127,41 @@
 
 				<p itemprop="lowPrice">15 contos, antecipado</p>
 				<p itemprop="offerCount">20 réis, na hora</p>
-				<p><button type="button">Inserir o nome na lista</button></p>
 			</section>
+
+			<p><button type="button">Inserir o nome na lista<small>e ganhe uma cópia do CD</small></button></p>
 		</article>
 
 
 
 		<section class="slide" id="letras">
-			<h1>Músicas do EP 1</h1>
+			<h1>Mu'sicas do EP 1</h1>
+
+			<p>O EP é a primeira das 3 etapas do projeto com um conceito visual, gráfico e de figurino especialmente desenvolvido. Ainda no final desse ano, haverá o lançamento do EP-2 O Imperador e na metade de 2014, chega ao público o disco Domitila, fechando a saga.</p>
+			<p>O projeto é inspirado no romance e nas cartas trocadas entre o Imperador Dom Pedro I e a Marquesa de Santos Domitila</p>
 
 			<div class="ac">
 				<div>
 				<input id="ac-1" name="rletras" type="radio" checked="checked"/>
 				<label for="ac-1">Mergulho</label>
 				<section class="ac-peq">
-	<p>primeira vez, tanta fascinação<br>
-	de serenas ondas, desde então<br>
-	joguei-me ao mar além da arrebentação<br>
-	encerrei as contas, mudei de mão</p>
+<h1 class="outline">Mergulho</h1>
+<p><small>André Neto / Lucas Rangel</small></p>
+<p>primeira vez, tanta fascinação<br>
+de serenas ondas, desde então<br>
+joguei-me ao mar além da arrebentação<br>
+encerrei as contas, mudei de mão</p>
 
-	<p>pra ser como um barco a navegar<br>
-	pelos portos, quero passar<br>
-	lá por maio eu vou voltar</p>
+<p>pra ser como um barco a navegar<br>
+pelos portos, quero passar<br>
+lá por maio eu vou voltar</p>
 
-	<p>eu sei<br>
-	que remadas me chamam<br>
-	disfarça e me chama, não faz esse drama</p>
+<p>eu sei<br>
+que remadas me chamam<br>
+disfarça e me chama, não faz esse drama</p>
 
-	<p>não leve a mal, to na arrebentação<br>
-	to levando junto toda nossa paixão</p>
-	<p><small>André Neto / Lucas Rangel</small></p>
+<p>não leve a mal, to na arrebentação<br>
+to levando junto toda nossa paixão</p>
 				</section>
 				</div>
 
@@ -167,37 +169,38 @@
 				<input id="ac-2" name="rletras" type="radio"/>
 				<label for="ac-2">Bercy</label>
 				<section class="ac-peq">
-	<p>eu sempre te falei<br>
-	tudo que passei<br>
-	pra quantos caras dei</p>
+<h1 class="outline">Bercy</h1>
+<p><small>André Neto</small></p>
+<p>eu sempre te falei<br>
+tudo que passei<br>
+pra quantos caras dei</p>
 
-	<p>não vi o meu tempo passar<br>
-	quando dei por mim<br>
-	perdi o meu lugar</p>
+<p>não vi o meu tempo passar<br>
+quando dei por mim<br>
+perdi o meu lugar</p>
 
-	<p>e eis que outro mundo<br>
-	te levou pra longe, longe<br>
-	fez da minha esperança<br>
-	uma dança que cansa girar</p>
+<p>e eis que outro mundo<br>
+te levou pra longe, longe<br>
+fez da minha esperança<br>
+uma dança que cansa girar</p>
 
-	<p>virar o mundo deveras<br>
-	sentar sobre suas pernas<br>
-	sei que vai lembrar, lembrar</p>
+<p>virar o mundo deveras<br>
+sentar sobre suas pernas<br>
+sei que vai lembrar, lembrar</p>
 
-	<p>que tens pra mim<br>
-	demais, é pouco e não quero<br>
-	faz jus a tudo que planejamos lá atrás<br>
-	te ver partindo doeu<br>
-	olha o que emagreci!<br>
-	te ver com outra é pior que a morte<br>
-	sei lá</p>
+<p>que tens pra mim<br>
+demais, é pouco e não quero<br>
+faz jus a tudo que planejamos lá atrás<br>
+te ver partindo doeu<br>
+olha o que emagreci!<br>
+te ver com outra é pior que a morte<br>
+sei lá</p>
 
-	<p>virar o mundo deveras<br>
-	sentar sobre suas pernas<br>
-	sei que vai lembrar<br>
-	da trouxa aqui<br>
-	que te guardou dentro o que pôde</p>
-	<p><small>André Neto</small></p>
+<p>virar o mundo deveras<br>
+sentar sobre suas pernas<br>
+sei que vai lembrar<br>
+da trouxa aqui<br>
+que te guardou dentro o que pôde</p>
 				</section>
 				</div>
 
@@ -205,23 +208,24 @@
 				<input id="ac-3" name="rletras" type="radio"/>
 				<label for="ac-3">Domitila</label>
 				<section class="ac-peq">
-	<p>Ela sabe que se esforça a cada dia mais<br>
-	e que suas manias são iguais<br>
-	se for verdade um dia, fugir da rotina<br>
-	e quem sabe mais…</p>
+<h1 class="outline">Domitila</h1>
+<p><small>André Neto / Thiago Marques</small></p>
+<p>Ela sabe que se esforça a cada dia mais<br>
+e que suas manias são iguais<br>
+se for verdade um dia, fugir da rotina<br>
+e quem sabe mais…</p>
 
-	<p>Ela já não gosta dele como um tempo atrás<br>
-	e decidir por ele tanto faz<br>
-	quer se casar um dia, ter outra família<br>
-	e quem sabe mais…</p>
+<p>Ela já não gosta dele como um tempo atrás<br>
+e decidir por ele tanto faz<br>
+quer se casar um dia, ter outra família<br>
+e quem sabe mais…</p>
 
-	<p>Ele não cresce no tempo dela<br>
-	e ela sabe que precisa de um pouco mais</p>
+<p>Ele não cresce no tempo dela<br>
+e ela sabe que precisa de um pouco mais</p>
 
-	<p>ela diz que busca nele um cara alto astral<br>
-	que seja mais presente e coisa tal<br>
-	que possa dividir, viver em paz.</p>
-	<p><small>André Neto / Thiago Marques</small></p>
+<p>ela diz que busca nele um cara alto astral<br>
+que seja mais presente e coisa tal<br>
+que possa dividir, viver em paz.</p>
 				</section>
 				</div>
 
@@ -229,15 +233,16 @@
 				<input id="ac-4" name="rletras" type="radio"/>
 				<label for="ac-4">Sofá</label>
 				<section class="ac-peq">
-	<p>só vim buscar minha bici<br>
-	meu frigi, meu som, sofá</p>
+<h1 class="outline">Sofá</h1>
+<p><small>André Neto</small></p>
+<p>só vim buscar minha bici<br>
+meu frigi, meu som, sofá</p>
 
-	<p>pode ficar com a pisci<br>
-	mil litros pra te afogar</p>
+<p>pode ficar com a pisci<br>
+mil litros pra te afogar</p>
 
-	<p>se não for mais meu<br>
-	eu, ninguém terá jamais</p>
-	<p><small>André Neto</small></p>
+<p>se não for mais meu<br>
+eu, ninguém terá jamais</p>
 				</section>
 				</div>
 
@@ -255,27 +260,28 @@
 				<input id="ac-5" name="rbanda" type="radio" checked="checked"/>
 				<label for="ac-5">Produção</label>
 				<section class="ac-peq">
-	<p>Produzido entre março e agosto de 2013 no Estudio12 experiênciasonora, Porto Alegre - RS - Brasil<br>
-	Gravado por Guilherme Wallau, Marcelo Fruet e Átila Viana<br>
-	Mixado e produzido por Marcelo Fruet<br>
-	Assistente de gravação: Guilherme Wallau</p>
+<h1 class="outline">Produção</h1>
+<p>Produzido entre março e agosto de 2013 no Estudio12 experiênciasonora, Porto Alegre - RS - Brasil<br>
+Gravado por Guilherme Wallau, Marcelo Fruet e Átila Viana<br>
+Mixado e produzido por Marcelo Fruet<br>
+Assistente de gravação: Guilherme Wallau</p>
 				</section>
 				</div>
 
 				<div>
 				<input id="ac-6" name="rbanda" type="radio"/>
-				<label for="ac-6">Composição</label>
+				<label for="ac-6"></label>
 				<section class="ac-peq">
-	<p>Arranjos de cordas e programação eletrônica por Marcelo Fruet<br>
-	Backing em Bercy e em Domitila, teclados em Domitila, kazoo em Sofá, guitarras adicionais por Marcelo Fruet<br>
-	Orgãos e Synths em Bercy por Marcelo Fruet e Átila Viana<br>
-	Wurlitzer e Rhodes em Bercy por Fernando Spillari</p>
+<h1 class="outline">Composição</h1>
+<p>Arranjos de cordas e programação eletrônica por Marcelo Fruet<br>
+Backing em Bercy e em Domitila, teclados em Domitila, kazoo em Sofá, guitarras adicionais por Marcelo Fruet<br>
+Orgãos e Synths em Bercy por Marcelo Fruet e Átila Viana<br>
+Wurlitzer e Rhodes em Bercy por Fernando Spillari</p>
 
-	<p>Masterização em Bercy, Mergulho e Sofá por Marcos Abreu<br>
-	Masterização de Domitila por Dave Locke @ JP Masters, na Carolina do Norte (EUA)</p>
+<p>Masterização em Bercy, Mergulho e Sofá por Marcos Abreu<br>
+Masterização de Domitila por Dave Locke @ JP Masters, na Carolina do Norte (EUA)</p>
 				</section>
 				</div>
-
 
 			</div>
 
@@ -286,27 +292,24 @@
 		<section class="slide" id="obrigado">
 			<h1>Agradecimentos</h1>
 
-	<p>Obrigado mais que especial para:</p>
+<p>Obrigado mais que especial para:</p>
 
-	<blockquote>Leticia Vilhalba Prestes, Luciana Tavares, Luana Vargas Fernandes, Felipe Fredo Naciuk, Laila Garroni, Cibele Toledo, Karine Bonjour, Roberto Landell de Moura, Julio Cezar Camarotto, Maria Carolina Higo, Diego Naveen Moreira Rosa, Bruno Valenti, Anderson Ceresa, João Paulo Ferraresi Dullius, Adelino Celestino Bilhalva Junior, Régis Araújo, Fabiano Girard Palma, Róger dos Santos, Ricardo Dal Santo, Rafael Mallmann, Raquel do Carmo Pereira, Marcelo Mello de Carvalho, Ana Priscila Costa, Liziane Hernandez Bonjour, Guilherme Behmer, Mariana Fagundes Martinez, Jussara Luiza Viero Hernandez, Gyan Dayita, Alexandra Lorandi Macedo, Paulo Sigales, Allan Hernandez, Pedro Marques, Fernando Machado da Costa, Mauro André Flores dos Santos, Rosalva Garibaldi Schilling, Herminia Pereira, Rosalva Garibaldi Schilling, André Fernando Barcellos, Guilherme Rodrigues, Veronica Veiga, João Paulo Ferraresi Dullius, Jaqueline Insaurriaga Silveira, Vanessa Fernandes, Aruna Rozales, Renato de Aguiar Siqueira, Totoro e Thaís Fabbri.</blockquote>
+<blockquote>Adelino Celestino Bilhalva Junior, Alexandra Lorandi Macedo, Allan Hernandez, Ana Priscila Costa, Anderson Ceresa, André Fernando Barcellos, Aruna Rozales, Bruno Valenti, Cibele Toledo, Diego Naveen Moreira Rosa, Fabiano Girard Palma, Felipe Fredo Naciuk, Fernando Machado da Costa, Guilherme Behmer, Guilherme Rodrigues, Gyan Dayita, Herminia Pereira, Jaqueline Insaurriaga Silveira, João Paulo Ferraresi Dullius, João Paulo Ferraresi Dullius, Julio Cezar Camarotto, Jussara Luiza Viero Hernandez, Karine Bonjour, Laila Garroni, Leticia Vilhalba Prestes, Liziane Hernandez Bonjour, Luana Vargas Fernandes, Luciana Tavares, Marcelo Mello de Carvalho, Maria Carolina Higo, Mariana Fagundes Martinez, Mauro André Flores dos Santos, Paulo Sigales, Pedro Marques, Rafael Mallmann, Raquel do Carmo Pereira, Régis Araújo, Renato de Aguiar Siqueira, Ricardo Dal Santo, Roberto Landell de Moura, Róger dos Santos, Rosalva Garibaldi Schilling, Rosalva Garibaldi Schilling, Totoro e Thaís Fabbri, Vanessa Fernandes, Veronica Veiga.</blockquote>
 
-	<p>Vocês sabem o que isso significou pra nós. Mais do que isso, vocês sabem de onde a gente veio, e precisamos lembrar que tudo seria mais difícil sem vocês. Muito obrigado do fundo do coração.</p>
+<p>Vocês sabem o que isso significou pra nós. Mais do que isso, vocês sabem de onde a gente veio, e precisamos lembrar que tudo seria mais difícil sem vocês. Muito obrigado do fundo do coração.</p>
 
-	<p>
-		<a target="_blank" title="Twitter da banda" href="http://twitter.com/litera">@litera</a>
-		<a target="_blank" title="Facebook da banda" href="http://www.facebook.com/litera">fb.com/litera</a>
-	</p>
+<p>
+	<a target="_blank" id="twitter" title="Twitter da banda" href="http://twitter.com/litera">@litera</a>
+	<a target="_blank" id="facebook" title="Facebook da banda" href="http://www.facebook.com/litera">fb.com/litera</a>
+</p>
 
-	<p><a target="_blank" title="Contato da banda" href="mailto:litera@domiti.la">litera@domiti.la</a></p>
-	<p><a target="_blank" title="Site oficial da banda" href="http://litera.mus.br">litera.mus.br</a></p>
+<p><a target="_blank" title="Contato da banda" href="mailto:litera@domiti.la">litera@domiti.la</a></p>
+<p><a target="_blank" title="Site oficial da banda" href="http://litera.mus.br">litera.mus.br</a></p>
 		</section>
-
 
 
 	</div>
 
-
 	<script src="@/scripts.min.js"></script>
-
 </body>
 </html>

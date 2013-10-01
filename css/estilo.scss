@@ -1,254 +1,84 @@
 @charset "UTF-8";
 
-@font-face {
-	font-family: 'Data trash';
-	src: url('data-trash.eot');
-	src: url('data-trash.eot?#iefix') format('embedded-opentype'),
-		url('data-trash.woff') format('woff'),
-		url('data-trash.ttf') format('truetype'),
-		url('data-trash.svg#data_trashregular') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-// Cores
+// Paleta de cores
 $amarelo:	#e3e667;
 $marrom:	#3e2d14;
 $roxo:		#585495;
 $oliva:		#49947A;
 $rosa:		#BD548B;
 $caramelo:	#929521;
-
+$bege:		#D6BC69;
 
 @import "reset";
-//@import "grid";
-
-
-//
-// TIPOGRAFIA
-//
-body {
-	background: $amarelo;
-	color: $marrom;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-	font-size: 1em;
-	padding: 0 10px 10px;
-}
-
-h1 {
-	font-family: 'Data trash';
-	font-size: 2.8em;
-	line-height: 1.2em;
-	margin: 0.5em 0
-}
-
-article section h1,
-section section h1 {
-	font-size: 1.8em;
-	margin: 0;
-}
-
-p {
-	line-height: 1.48em;
-	margin: 1em 0;
-}
+@import "tipografia";
 
 //
-// POSICIONAMENTO
+// GERAL
 //
+$sideNavWidth: 240px;
+
+.slide {
+	margin-top: 3em;
+	min-height: 480px;
+}
 
 #inicio{}
+	#domitila{
+		background: url('domitila.svg') no-repeat;
+		text-indent: -9999px;
+		color: rgba(0,0,0,0);
+	}
+
 #show{}
 #letras{}
 #banda{}
 #obrigado{}
-
-
-//
-// MENU
-//
-
-$sideNavWidth:250px;
-$menuBG:#222;
-
-.floatl{ float:left; }
-.floatr{ float:right; position: fixed; right: 10px; }
-
-.menu{
-	position:fixed;
-	top:0;
-	bottom:0;
-	z-index:0;
-	width:$sideNavWidth;
-	background:$menuBG;
-	color:#FFF;
-	padding:20px;
-
-	h2{	}
-	&.dir{ left:auto; right:0; }
-	> ul{ padding:0; list-style:none; margin:20px 0;
-		> li{ border-top:1px solid rgba(255,255,255,0.1); position:relative; overflow:hidden; 
-			a{
-				color:#CCC;
-				text-decoration:none;
-				display:block;
-				line-height:3.2;
-				font-size:0.8em;
-				font-weight:bold;
-				margin:0 -10px;
-				padding:0 20px;
-				overflow:hidden;
-				white-space:nowrap;
-				transition:0.4s cubic-bezier(0.335, 0.815, 0.470, 1);
-				&:hover{ color:$menuBG; text-indent:$sideNavWidth; }
-				&::before{ content:attr(data-value); color:#FFF; float:left; width:$sideNavWidth; margin-left:-$sideNavWidth; }
-			}
-		}
-	}
-}
-
-.menuBtn{
-	position: fixed;
-	display:inline-block;
-	background:#f1103a;
-	border-radius:50px;
-	color:#FFF;
-	cursor:pointer;
-	display:block;
-	font:bold 1.7em/36px Courier New;
-	width:36px;
-	height:36px;
-	text-align:center;
-	text-shadow:0 -5px, 0 5px;
-	z-index: 20;
-	&:hover{ background:#222; }
-}
+	#twitter{}
+	#facebook{}
 
 #conteudo{
-	min-height:100%; position:relative; z-index:1; background:#FFF; padding:20px; transition:0.4s cubic-bezier(0.335, 0.815, 0.470, 1);
+	min-height:100%; position:relative; z-index:1; background:$amarelo; padding:4px; transition:0.4s cubic-bezier(0.335, 0.815, 0.470, 1);
 	#bPlaylist:checked ~ &{ -webkit-transform:translatex($sideNavWidth); transform:translatex($sideNavWidth); border-radius:8px; }
 	#bMenu:checked ~     &{ -webkit-transform:translatex(-$sideNavWidth); transform:translatex(-$sideNavWidth); border-radius:8px; }	
 }
-.playlist {background:#ff0 inline-image('playlist.png') no-repeat 10px 11px; }
+
+//@import url("240x320/estilo.css") all and (max-width: 320px);
+//@import url("320x480/estilo.css") all and (min-width: 320px) and (max-width: 480px);
+//@import url("480x640/estilo.css") all and (min-width: 480px) and (max-width: 640px);
+//@import url("640x480/estilo.css") all and (min-width: 640px) and (max-width: 768px);
+//@import url("768x1024/estilo.css") all and (min-width: 768px) and (max-width: 1024px);
+//@import url("1024x768/estilo.css") all and (min-width: 1024px);
 
 
-
-
-/*
-@import url("240x320/estilo.css") all and (max-width: 320px);
-@import url("320x480/estilo.css") all and (min-width: 320px) and (max-width: 480px);
-@import url("480x640/estilo.css") all and (min-width: 480px) and (max-width: 640px);
-@import url("640x480/estilo.css") all and (min-width: 640px) and (max-width: 768px);
-@import url("768x1024/estilo.css") all and (min-width: 768px) and (max-width: 1024px);
-@import url("1024x768/estilo.css") all and (min-width: 1024px);
-*/
-
-.slide {min-height: 480px}
 //
 // RESPONSAVIDADE
 //
 @media screen and (max-width: 320px)
 {
-	// MENU
+	#tit-mobi {
+		background: $amarelo;
+		font-family: 'Data trash';
+		font-size: 1.2em;
+		height: 2em;
+		line-height: 2em;
+		margin: 0;
+		position: fixed;
+		text-align: center;
+		width: 91%;
+		z-index: 2;
+	}
+	nav {display: none;}
 
+	@import "menumobile";
 
 }
 
-@media screen and (min-width: 320px)
+@media screen and (min-width: 321px)
 {
+	#tit-mobi {display: none;}
 
 	// firula das letras e ficha tecnica
-
-.ac{
-	width: 96%;
-	margin: 10px auto 30px auto;
-	text-align: left;
-}
-.ac label{
-	padding: 5px 20px;
-	position: relative;
-	z-index: 20;
-	display: block;
-	height: 30px;
-	cursor: pointer;
-	color: #777;
-	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
-	line-height: 33px;
-	font-size: 19px;
-	background: #ffffff;
-	background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea));
-	background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
-	background: -o-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
-	background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
-	background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
-	box-shadow: 
-		0px 0px 0px 1px rgba(155,155,155,0.3), 
-		1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
-		0px 2px 2px rgba(0,0,0,0.1);
-}
-.ac label:hover{
-	background: #fff;
-}
-.ac input:checked + label,
-.ac input:checked + label:hover{
-	background: #c6e1ec;
-	color: #3d7489;
-	text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
-	box-shadow: 
-		0px 0px 0px 1px rgba(155,155,155,0.3), 
-		0px 2px 2px rgba(0,0,0,0.1);
-}
-.ac label:hover:after,
-.ac input:checked + label:hover:after{
-	content: '';
-	position: absolute;
-	width: 24px;
-	height: 24px;
-	right: 13px;
-	top: 7px;
-	background: transparent inline-image('arrow_down.png') no-repeat center center;	
-}
-.ac input:checked + label:hover:after{
-	background-image: inline-image('arrow_up.png');
-}
-.ac input{
-	display: none;
-}
-.ac section{
-	background: rgba(255, 255, 255, 0.5);
-	margin-top: -1px;
-	overflow: hidden;
-	height: 0px;
-	position: relative;
-	z-index: 10;
-	-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-	-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-	-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-	-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-}
-.ac input:checked ~ section{
-	-webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-	-moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-	-o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-	-ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-	transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
-}
-.ac input:checked ~ section.ac-peq{
-	height: 140px;
-}
-.ac input:checked ~ section.ac-med{
-	height: 180px;
-}
-.ac input:checked ~ section.ac-grd{
-	height: 230px;
-}
-
-
+	@import "acordeon";
 
 
 }

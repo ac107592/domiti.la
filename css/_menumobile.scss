@@ -1,0 +1,56 @@
+$menuBG: #222;
+
+.floatl{ float:left; }
+.floatr{ float:right; position: fixed; right: 10px; }
+
+.menu{
+	position:fixed;
+	top:0;
+	bottom:0;
+	z-index:0;
+	width:$sideNavWidth;
+	background:$menuBG;
+	color:#FFF;
+
+	h2{	}
+	&.dir{ left:auto; right:0; }
+	> ul{ padding:0; list-style:none; margin:20px 0;
+		> li{ border-top:1px solid rgba(255,255,255,0.1); position:relative; overflow:hidden; 
+			a{
+				color:#CCC;
+				text-decoration:none;
+				display:block;
+				line-height:3.2;
+				font-size:0.8em;
+				font-weight:bold;
+				margin:0 -10px;
+				padding:0 20px;
+				overflow:hidden;
+				white-space:nowrap;
+				transition:0.4s cubic-bezier(0.335, 0.815, 0.470, 1);
+				&:hover{ color:$menuBG; text-indent:$sideNavWidth; }
+				&::before{ content:attr(data-value); color:#FFF; float:left; width:$sideNavWidth; margin-left:-$sideNavWidth; }
+			}
+		}
+	}
+}
+
+.menuBtn{
+	position: fixed;
+	display:inline-block;
+	background:$roxo;
+	border-radius:50px;
+	color: $bege;
+	cursor:pointer;
+	display:block;
+	font:bold 1.7em/36px Courier New;
+	width:32px;
+	height:32px;
+	text-align:center;
+	text-shadow:0 -5px, 0 5px;
+	z-index: 20;
+	margin:4px;
+	&:hover{ background:#222; }
+}
+
+.playlist {background:$roxo inline-image('playlist.png') no-repeat 10px 11px; }

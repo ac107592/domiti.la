@@ -1,7 +1,7 @@
 /* SITE */
 
 	Atualização: 29 / 9 / 13
-	Versão:      Café (0.1)
+	Versão:      Defenestração (0.1)
 	Língua:      Gaudéria
 	Doctype:     HTML5
 	Charset:     UTF-8 (sem BOM)

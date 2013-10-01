@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'Data trash';
+	src: url('data-trash.eot');
+	src: url('data-trash.eot?#iefix') format('embedded-opentype'),
+		url('data-trash.woff') format('woff'),
+		url('data-trash.ttf') format('truetype'),
+		url('data-trash.svg#data_trashregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	color: $marrom;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	padding: 0 10px 10px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+h1 {
+	font-family: 'Data trash';
+	font-size: 2.8em;
+	line-height: 1.2em;
+	margin: 0.5em 0
+}
+
+article section h1,
+section section h1 {
+	font-size: 1.8em;
+	margin: 0;
+}
+
+p {
+	line-height: 1.48em;
+	margin: 1em 0;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
