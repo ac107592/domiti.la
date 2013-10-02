@@ -1,39 +1,45 @@
 .ac{
-	width: 96%;
-	margin: 10px auto 30px auto;
-	text-align: left;
+	width: 95%;
+	margin: 0 auto;
+
+	label{
+		padding: 5px 20px;
+		position: relative;
+		z-index: 20;
+		display: block;
+		height: 30px;
+		cursor: pointer;
+		color: $oliva;
+		text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+		line-height: 33px;
+		font-size: 1.2em;
+		background: #ffffff;
+		background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea));
+		background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+		background: -o-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+		background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+		background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
+		box-shadow: 
+			0px 0px 0px 1px rgba(155,155,155,0.3), 
+			1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
+			0px 2px 2px rgba(0,0,0,0.1);
+	}
+	p{
+		font-size: 0.7em;
+		line-height: 1.2em;
+	}
+
 }
-.ac label{
-	padding: 5px 20px;
-	position: relative;
-	z-index: 20;
-	display: block;
-	height: 30px;
-	cursor: pointer;
-	color: #777;
-	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
-	line-height: 33px;
-	font-size: 19px;
-	background: #ffffff;
-	background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea));
-	background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
-	background: -o-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
-	background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
-	background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
-	box-shadow: 
-		0px 0px 0px 1px rgba(155,155,155,0.3), 
-		1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
-		0px 2px 2px rgba(0,0,0,0.1);
-}
+
 .ac label:hover{
 	background: #fff;
 }
 .ac input:checked + label,
 .ac input:checked + label:hover{
-	background: #c6e1ec;
-	color: #3d7489;
+	background: $oliva;
+	color: #fff;
 	text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
 	box-shadow: 
 		0px 0px 0px 1px rgba(155,155,155,0.3), 
@@ -75,13 +81,4 @@
 	-ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
 	transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
 	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
-}
-.ac input:checked ~ section.ac-peq{
-	height: 140px;
-}
-.ac input:checked ~ section.ac-med{
-	height: 180px;
-}
-.ac input:checked ~ section.ac-grd{
-	height: 230px;
 }

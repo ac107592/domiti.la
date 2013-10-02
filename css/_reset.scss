@@ -42,10 +42,6 @@ a:active {
 	outline: 0;
 }
 
-strong {
-	font-weight: bold;
-}
-
 // IE6/7
 ol,
 ul {
@@ -128,13 +124,17 @@ button::-moz-focus-inner {
 
 
 iframe { overflow:hidden; border: none; width: 100%; min-height: 190px }
+article iframe { width: 96%; }
 
+.nha{
+	opacity: 0;
+}
 .outline {
 	display: none;
 }
 
 ul {
-	list-style: none;
+	list-style: square;
 }
 a img {
 	border: none

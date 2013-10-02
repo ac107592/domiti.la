@@ -1,7 +1,7 @@
 $menuBG: #222;
 
 .floatl{ float:left; }
-.floatr{ float:right; position: fixed; right: 10px; }
+.floatr{ float:right; position: fixed; right: 0; }
 
 .menu{
 	position:fixed;
@@ -12,18 +12,16 @@ $menuBG: #222;
 	background:$menuBG;
 	color:#FFF;
 
-	h2{	}
+	h1{	}
 	&.dir{ left:auto; right:0; }
 	> ul{ padding:0; list-style:none; margin:20px 0;
 		> li{ border-top:1px solid rgba(255,255,255,0.1); position:relative; overflow:hidden; 
 			a{
 				color:#CCC;
-				text-decoration:none;
 				display:block;
 				line-height:3.2;
 				font-size:0.8em;
 				font-weight:bold;
-				margin:0 -10px;
 				padding:0 20px;
 				overflow:hidden;
 				white-space:nowrap;
@@ -34,6 +32,8 @@ $menuBG: #222;
 		}
 	}
 }
+	.esq {padding-top: 3em}
+
 
 .menuBtn{
 	position: fixed;
@@ -50,7 +50,7 @@ $menuBG: #222;
 	text-shadow:0 -5px, 0 5px;
 	z-index: 20;
 	margin:4px;
-	&:hover{ background:#222; }
+	&:hover{ background-color:#222; }
 }
 
-.playlist {background:$roxo inline-image('playlist.png') no-repeat 10px 11px; }
+.playlist {background:$roxo inline-image('playlist.png') no-repeat 9px 9px; }

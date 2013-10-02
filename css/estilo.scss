@@ -15,32 +15,76 @@ $bege:		#D6BC69;
 //
 // GERAL
 //
-$sideNavWidth: 240px;
+$sideNavWidth: 180px;
 
 .slide {
-	margin-top: 3em;
+	margin: 3em 0;
 	min-height: 480px;
+
+	h1:first-child {
+		padding-top: 0.4em;
+	}
 }
 
-#inicio{}
+//#inicio{}
+	h1 small{color: $rosa}
 	#domitila{
 		background: url('domitila.svg') no-repeat;
 		text-indent: -9999px;
 		color: rgba(0,0,0,0);
 	}
 
-#show{}
-#letras{}
-#banda{}
-#obrigado{}
-	#twitter{}
-	#facebook{}
+	strong {
+		color: $caramelo;
+		font-weight: bold;
+	}
+
+
+//#show{}
+	button{
+
+		height:auto;
+		padding: 10px 0;
+		color:#fff;
+		font-size:1.2em;
+		text-align:center;
+		border-radius:4px;
+		border:1px solid $oliva;
+		box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
+		background-image: linear-gradient(to bottom, $caramelo, $oliva 130%);
+		width: 96%;
+	}
+
+//#letras{}
+//#banda{}
+	// firula das letras e ficha tecnica
+	@import "acordeon";
+
+
+//#obrigado{}
+	#twitter,
+	#facebook
+	{
+		position: absolute;
+		text-indent: -9999px;
+		height: 48px;
+		width: 48px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	#facebook{background: url('facebook.svg') no-repeat;}
+	#twitter{background:  url('twitter.svg')  no-repeat; margin-left: 70px}
 
 #conteudo{
-	min-height:100%; position:relative; z-index:1; background:$amarelo; padding:4px; transition:0.4s cubic-bezier(0.335, 0.815, 0.470, 1);
+	min-height:100%; position:relative; z-index:1; background:$amarelo; padding:4px; transition:0.4s cubic-bezier(0.335,0.815,0.470,1); width:100%;
 	#bPlaylist:checked ~ &{ -webkit-transform:translatex($sideNavWidth); transform:translatex($sideNavWidth); border-radius:8px; }
-	#bMenu:checked ~     &{ -webkit-transform:translatex(-$sideNavWidth); transform:translatex(-$sideNavWidth); border-radius:8px; }	
+	#bMenu:checked ~		 &{ -webkit-transform:translatex(-$sideNavWidth); transform:translatex(-$sideNavWidth); border-radius:8px; }	
 }
+	#bPlaylist:checked ~ .dir{ display: none;}
+
+
 
 //@import url("240x320/estilo.css") all and (max-width: 320px);
 //@import url("320x480/estilo.css") all and (min-width: 320px) and (max-width: 480px);
@@ -55,6 +99,8 @@ $sideNavWidth: 240px;
 //
 @media screen and (max-width: 320px)
 {
+	#inicio h1{padding: 0}
+
 	#tit-mobi {
 		background: $amarelo;
 		font-family: 'Data trash';
@@ -64,21 +110,20 @@ $sideNavWidth: 240px;
 		margin: 0;
 		position: fixed;
 		text-align: center;
-		width: 91%;
+		width: 100%;
 		z-index: 2;
 	}
 	nav {display: none;}
 
 	@import "menumobile";
+		.ac input:checked ~ section.ac-peq{height: 180px;}
+		.ac input:checked ~ section.ac-med{height: 280px;}
+		.ac input:checked ~ section.ac-grd{height: 440px;}
 
 }
 
 @media screen and (min-width: 321px)
 {
 	#tit-mobi {display: none;}
-
-	// firula das letras e ficha tecnica
-	@import "acordeon";
-
 
 }
