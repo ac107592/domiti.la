@@ -43,11 +43,11 @@ a:active {
 }
 
 // IE6/7
-ol,
-ul {
-	margin: 1em 0;
-	padding: 0 0 0 40px;
-}
+//ol,
+//ul {
+//	margin: 1em 0;
+//	padding: 0 0 0 40px;
+//}
 
 // Ajusta IE7
 nav ul,
@@ -126,15 +126,8 @@ button::-moz-focus-inner {
 iframe { overflow:hidden; border: none; width: 100%; min-height: 190px }
 article iframe { width: 96%; }
 
-.nha{
-	opacity: 0;
-}
 .outline {
 	display: none;
-}
-
-ul {
-	list-style: square;
 }
 a img {
 	border: none
