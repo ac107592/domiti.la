@@ -19,7 +19,7 @@ $sideNavWidth: 180px;
 
 .slide {
 	margin: 2.2em 0;
-	min-height: 480px;
+	margin-bottom: 5em;
 
 	h1:first-child {
 		padding-top: 0.4em;
@@ -31,15 +31,10 @@ body {
 	padding-bottom: 5em;
 }
 //#inicio{}
-	h1 small{color: $rosa}
-	#domitila{
-		background: url('domitila.svg') no-repeat;
-		text-indent: -9999px;
-		color: rgba(0,0,0,0);
-	}
+	h1 small{color: $oliva}
 
 	strong {
-		color: $caramelo;
+		color: $rosa;
 		font-weight: bold;
 	}
 
@@ -66,19 +61,7 @@ body {
 
 
 //#obrigado{}
-	#twitter,
-	#facebook{
-		position: absolute;
-		text-indent: -9999px;
-		height: 48px;
-		width: 48px;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	}
-	#facebook{background: url('facebook.svg') no-repeat;}
-	#twitter{background:  url('twitter.svg')  no-repeat; margin-left: 70px}
+
 
 #conteudo{
 	min-height:100%; position:relative; z-index:1; background:$amarelo; padding:0 4px 5em;
@@ -103,6 +86,18 @@ body {
 //
 @media screen and (max-width: 320px)
 {
+	#domitila,
+	#facebook,
+	#twitter {background: url('sprites-mobile.png') no-repeat;width: 48px;height: 48px;color: rgba(0,0,0,0); }
+
+	#domitila {font-size: 44px}
+	#twitter,
+	#facebook{
+		position: absolute;
+	}
+	#facebook {background-position: 0 -48px;}
+	#twitter {background-position: 0 -96px;margin-left: 70px}
+
 	#inicio h1{padding: 0}
 
 	#tit-mobi {
@@ -129,6 +124,7 @@ body {
 		background: url('intro.320x480.jpg') no-repeat;
 		iframe{margin-top: 4.5em}
 	}
+
 	aside p{display: none;}
 	aside h1 {
 		position: relative;
