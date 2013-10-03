@@ -55,12 +55,15 @@ body {
 	}
 
 //#letras{}
-//#banda{}
 	// firula das letras e ficha tecnica
 	@import "acordeon";
 
+//#banda{}
+	#contato{font-size: 1.5em}
+	#contato span{color: $rosa }
+	#site{font-size: 3em; color: $oliva}
 
-//#obrigado{}
+
 
 
 #conteudo{
@@ -128,7 +131,7 @@ body {
 	aside p{display: none;}
 	aside h1 {
 		position: relative;
-		right: 2.2em;
+		right: 2.1em;
 		transform: rotate(270deg);
 		-ms-transform: rotate(270deg);
 		-webkit-transform: rotate(270deg);

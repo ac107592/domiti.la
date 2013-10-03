@@ -1,7 +1,7 @@
 
 # Documentação
 
-Estes são os códigos fontes do front-end do hotsite domiti.la. Uma *landpage* de página estática responsiva / fluída escrita em HTML5 e CSS3 com os estilos compilados em SASS Compass.
+Estes são os códigos fontes do front-end do hotsite <http://domiti.la/> da banda <http://litera.mus.br/>. Uma *landpage* de página estática responsiva escrita em HTML5 e CSS3 com estilos compilados em SASS Compass.
 
 A folha de estilos está organizada para não onerar uma pessoa que esteja vendo o site em seu celular.
 
