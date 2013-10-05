@@ -9,6 +9,8 @@ DefaultLanguage pt-BR
 
 Options -Indexes
 
+ErrorDocument 404 /404.htm 
+
 #zlib.output_compression On
 #zlib.output_compression_level 9
 

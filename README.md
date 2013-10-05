@@ -87,6 +87,7 @@ chmod u+x publica.sh
 
 # TODO
 
+- [HTM]	404
 - [JS]	playlist
 - [CSS]	menu mobi
 - [CSS]	tipografia
