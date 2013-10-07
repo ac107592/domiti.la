@@ -25,6 +25,8 @@ $sideNavWidth: 180px;
 		padding-top: 0.4em;
 	}
 }
+.tabs {display: none;}
+
 
 body {
 	background: $amarelo;
@@ -55,8 +57,6 @@ body {
 	}
 
 //#letras{}
-	// firula das letras e ficha tecnica
-	@import "acordeon";
 
 //#banda{}
 	#contato{font-size: 1.5em}
@@ -117,6 +117,10 @@ body {
 		top: 0;
 	}
 	nav {display: none;}
+	article section {
+		float: left;
+		width: 50%;
+	}
 
 	@import "menumobile";
 }
@@ -146,6 +150,55 @@ body {
 	#inicio small{color: $bege}
 
 }
+@media screen and (min-width: 480px)
+{
+	article section {
+		float: left;
+		width: 33%;
+	}
+
+	#domitila,
+	#facebook,
+	#twitter {background: url('sprites-tablet.png') no-repeat;width: 56px;height: 56px;color: rgba(0,0,0,0); }
+
+	#domitila {font-size: 52px}
+	#twitter,
+	#facebook{
+		position: absolute;
+	}
+	#facebook {background-position: 0 -56px;}
+	#twitter {background-position: 0 -112px;margin-left: 90px}
+
+
+	#inicio {
+		padding: 5px;
+
+//		.slide h1:first-child,
+		h1 {
+			margin: 0;
+			padding: 0
+		}
+		p {
+			margin: 7em 1.6em 0;
+			float: left;
+		}
+
+	}
+	#som {
+		display: block !important;
+	}
+
+
+}
+@media screen and (max-width: 480px)
+{
+	// firula das letras e ficha tecnica
+	@import "acordeon";
+
+}
+
+
+// TABLET
 @media screen and (min-width: 479px)
 {
 	.slide{margin: 5em 0;}
@@ -183,5 +236,21 @@ body {
 {
 	#inicio {
 		background: url('intro.640x480.jpg') no-repeat;
+	}
+
+	#inicio {
+		padding: 10px;
+
+		small {color: $oliva}
+		p { margin: 0 1em 9em 0;}
+	}
+
+	.tabs {display: block;}
+	.ac {display: none;}
+	@import "tabs";
+	div.dir {
+		float: right;
+		left: 250px;
+		width: 400px;
 	}
 }
