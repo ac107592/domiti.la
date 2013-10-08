@@ -10,21 +10,21 @@
 	<meta name="MobileOptimized" content="240">
 
 	<meta itemprop="name" content="Lançamento do EP1 - A Marquesa do disco Domitila da banda Lítera"/>
-	<meta itemprop="image" content="http://domiti.la/v0.31/@/promo.jpg"/>
+	<meta itemprop="image" content="http://domiti.la/@/promo.jpg"/>
 
 	<meta name="twitter:card" content="summary_large_image"/>
 	<meta name="twitter:site" content="@literarock"/>
 	<meta name="twitter:title" content="Hotsite do disco Domitila da banda Lítera"/>
 	<meta name="twitter:description" content="Ouça, baixe e leie as letras das músicas. Veja as informações do próximo show e ingressos."/>
-	<meta name="twitter:image" content="http://domiti.la/v0.31/@/promo_tw.jpg"/>
+	<meta name="twitter:image" content="http://domiti.la/@/promo_tw.jpg"/>
 	<meta name="twitter:creator" content="@literarock"/>
 
 	<meta property="og:title" content="Hotsite do disco Domitila da banda Lítera"/>
 	<meta property="og:description" content="Ouça, baixe e leie as letras das músicas. Veja as informações do próximo show e ingressos."/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:site_name" content="domiti.la"/>
-	<meta property="og:url" content="http://domiti.la/v0.31/"/>
-	<meta property="og:image" content="http://domiti.la/v0.31/@/promo_fb.jpg"/>
+	<meta property="og:url" content="http://domiti.la/"/>
+	<meta property="og:image" content="http://domiti.la/@/promo_fb.jpg"/>
 	<meta property="fb:admins" content="100000892438494"/>
 
 	<link rel="stylesheet" href="@/estilo.css">
@@ -69,8 +69,8 @@
 		</ul>
 	</aside>
 
-	<label class="menuBtn floatr" for="bMenu">&minus;</label>
-	<label class="menuBtn playlist" for="bPlaylist"></label>
+	<label class="menuBtn floatr" for="bMenu" onclick="m('bPlaylist')">&minus;</label>
+	<label class="menuBtn playlist" for="bPlaylist" onclick="m('bMenu')"></label>
 
 	<div id="conteudo">
 
@@ -101,6 +101,8 @@
 		<article class="slide" id="show">
 			<h1>Pro'ximo show</h1>
 
+			<div id="info"></div>
+
 			<section>
 				<h1>Quando</h1>
 
@@ -123,7 +125,7 @@
 				Lima e Silva, 1037</p>
 			</section>
 
-			<p><iframe src="https://maps.google.com.br/maps?f=q&source=s_q&hl=pt-PT&geocode=&q=Dhomba+-+Rua+General+Lima+E+Silva,+Porto+Alegre+-+Rio+Grande+do+Sul&aq=0&oq=dh&sll=-30.099721,-51.159309&sspn=0.320788,0.617294&t=h&ie=UTF8&hq=Dhomba+-+Rua+General+Lima+E+Silva,&hnear=Porto+Alegre+-+Rio+Grande+do+Sul&ll=-30.034548,-51.223497&spn=0.011146,0.012875&z=15&output=embed"></iframe></p>
+			<p><iframe src="https://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-PT&amp;geocode=&amp;q=Dhomba+-+Rua+General+Lima+E+Silva,+Porto+Alegre+-+Rio+Grande+do+Sul&amp;aq=0&amp;oq=dh&amp;sll=-30.099721,-51.159309&amp;sspn=0.320788,0.617294&amp;t=h&amp;ie=UTF8&amp;hq=Dhomba+-+Rua+General+Lima+E+Silva,&amp;hnear=Porto+Alegre+-+Rio+Grande+do+Sul&amp;ll=-30.034548,-51.223497&amp;spn=0.011146,0.012875&amp;z=15&amp;output=embed"></iframe></p>
 
 			<p><button type="button" onclick="document.location.href='http://dhomba.tempsite.ws/new/agenda/item/663'" title="Acesse aqui o site do Dhomba">Ponha o nome na lista<br><small>e ganhe uma cópia do CD</small></button></p>
 		</article>
@@ -133,9 +135,11 @@
 		<section class="slide" id="letras">
 			<h1>Mu'sicas do EP 1</h1>
 
-			<p class="desc">O EP é a primeira das <strong>3 etapas</strong> do projeto com um conceito visual, gráfico e de figurino especialmente desenvolvido.</p>
-			<p class="desc">Ainda, no final desse ano, haverá o lançamento do EP-2 <strong>O Imperador</strong> e na metade de 2014, chega ao público o disco <strong>Domitila</strong>, fechando a saga.</p>
-			<p class="desc">O projeto é inspirado no romance e nas <strong>cartas trocadas</strong> entre o Imperador Dom Pedro I e a Marquesa de Santos Domitila.</p>
+			<div id="amantes">
+				<p>O EP é a primeira das <strong>3 etapas</strong> do projeto com um conceito visual, gráfico e de figurino especialmente desenvolvido.</p>
+				<p>No final desse ano, haverá o lançamento do EP-2 <strong>O Imperador</strong> e na metade de 2014, chega ao público o disco <strong>Domitila</strong>, fechando a saga.</p>
+				<p>O projeto é inspirado no romance e nas <strong>cartas trocadas</strong> entre o Imperador Dom Pedro I e a Marquesa de Santos Domitila.</p>
+			</div>
 
 
 			<section class="tabs">
@@ -357,6 +361,7 @@ eu, ninguém terá jamais</p>
 		<section class="slide" id="banda">
 			<h1>Ficha te'cnica</h1>
 
+			<div id="ficha"></div>
 
 			<section class="tabs">
 				<input id="tab-6" type="radio" name="radio-let" class="tab-selector-1" checked="checked"/>

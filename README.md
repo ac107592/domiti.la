@@ -52,7 +52,6 @@ chmod u+x publica.sh
 	kraken.io
 	tools.dynamicdrive.com/favicon
 	petercollingridge.appspot.com/svg-optimiser
-	google.com/fonts/
 
 
 
@@ -84,9 +83,9 @@ chmod u+x publica.sh
 	Outliner:       Extensão do chrome de auxílio ao SEO
 
 
+
 # TODO
 
-- [CSS]	menu mobi
 - [GLG]	Analitycs
 - [GLG]	Webmaster tools
 

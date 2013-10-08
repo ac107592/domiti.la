@@ -17,7 +17,7 @@ rm -f ../www/@/*
 echo -e "[ \e[01;30mOK\e[00m ] cache limpa..."
 
 # compila js
-uglifyjs "$jsDir/smooth-scroll.js" -o "$jsDir/../../www/@/scripts.min.js"
+uglifyjs "$jsDir/mobile.js" "$jsDir/smooth-scroll.js" -o "$jsDir/../../www/@/scripts.min.js"
 echo -e "[ \e[01;30mOK\e[00m ] compilado scripts.min.js..."
 
 # publica arquivos

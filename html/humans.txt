@@ -1,7 +1,7 @@
 /* SITE */
 
 	Atualização: 8 / 10 / 13
-	Versão:      Defenestração (0.1)
+	Versão:      Mequetrefe (1.0)
 	Língua:      Gaudéria
 	Doctype:     HTML5
 	Charset:     UTF-8 (sem BOM)
@@ -68,7 +68,6 @@
 	kraken.io
 	tools.dynamicdrive.com/favicon
 	petercollingridge.appspot.com/svg-optimiser
-	google.com/fonts/
 
 
 

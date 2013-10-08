@@ -203,13 +203,8 @@ body {
 
 }
 
-@media screen and (min-width: 479px) and (max-width: 639px)
+@media screen and (min-width: 479px) and (max-width: 767px)
 {
-	#inicio {
-		background: url('intro.480x640.jpg') no-repeat;
-	}
-	.slide{width: 450px}
-
 	#domitila,
 	#facebook,
 	#twitter {background: url('sprites-tablet.png') no-repeat;width: 56px;height: 56px;color: rgba(0,0,0,0); }
@@ -219,10 +214,20 @@ body {
 	#twitter {background-position: 0 -112px;margin-left: 90px}
 }
 
+@media screen and (min-width: 479px) and (max-width: 639px)
+{
+	#inicio {
+		background: url('intro.480x640.jpg') no-repeat;
+	}
+	.slide{width: 450px}
+}
+
 
 // IPAD
 @media screen and (min-width: 640px)
 {
+	#som {height: 350px}
+
 	.tabs {display: block;}
 	.ac {display: none;}
 	@import "tabs";
@@ -256,8 +261,6 @@ body {
 	aside h1{line-height: 0.5em}
 	sup small{display: inline;}
 
-	p.desc {width: 70%; margin-left: 5%}
-
 	#facebook {background-position: 0 -72px;}
 	#twitter {background-position: 0 -144px;margin-left: 160px}
 
@@ -270,6 +273,19 @@ body {
 		p{margin: 8.5em 2.4em 0 }
 	}
 	.slide{width: 720px}
+
+
+	#info,
+	#ficha {
+		width: 690px;
+		height: 245px
+	}
+
+	#info {background: url('info-768x1024.jpg') ;}
+	#ficha {background: url('ficha-768x1024.jpg') ;}
+
+	#amantes {padding: 0 3em}
+
 }
 
 @media screen and (min-width: 1024px)
@@ -279,4 +295,24 @@ body {
 		p { margin: 1em 1em 13em 0;}
 	}
 	.slide{width: 986px}
+
+	#info,
+	#ficha {
+		width: 946px;
+		height: 350px
+	}
+
+	#info {background: url('info-1024x768.jpg') no-repeat;}
+
+	#amantes {
+background-image:  url('amantes-1024x768.jpg'), url('amantes-1024x768.jpg');
+background-position: -170px 0, 700px 0;
+background-repeat: no-repeat;
+
+		width: 500px;
+		padding: 0 20%
+	}
+
+	#ficha {background: url('ficha-1024x768.jpg') no-repeat;}
+
 }
