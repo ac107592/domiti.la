@@ -21,17 +21,19 @@ $sideNavWidth: 180px;
 	margin: 2.2em 0;
 	margin-bottom: 5em;
 
-	h1:first-child {
-		padding-top: 0.4em;
-	}
+	h1:first-child {padding-top: 0.4em;}
 }
 .tabs {display: none;}
+.clear-shadow {
+	clear: both;
+}
 
 
 body {
 	background: $amarelo;
 	padding-bottom: 5em;
 }
+
 //#inicio{}
 	h1 small{color: $oliva}
 
@@ -41,9 +43,12 @@ body {
 	}
 
 
+//	#inicio small{color: $bege}
+
+
+
 //#show{}
 	button{
-
 		height:auto;
 		padding: 10px 0;
 		color:#fff;
@@ -57,13 +62,10 @@ body {
 	}
 
 //#letras{}
-
 //#banda{}
 	#contato{font-size: 1.5em}
 	#contato span{color: $rosa }
 	#site{font-size: 3em; color: $oliva}
-
-
 
 
 #conteudo{
@@ -74,30 +76,25 @@ body {
 }
 	#bPlaylist:checked ~ .dir{ display: none;}
 
+	#twitter,
+	#facebook{position: absolute;}
 
-
-//@import url("240x320/estilo.css") all and (max-width: 320px);
-//@import url("320x480/estilo.css") all and (min-width: 320px) and (max-width: 480px);
-//@import url("480x640/estilo.css") all and (min-width: 480px) and (max-width: 640px);
-//@import url("640x480/estilo.css") all and (min-width: 640px) and (max-width: 768px);
-//@import url("768x1024/estilo.css") all and (min-width: 768px) and (max-width: 1024px);
-//@import url("1024x768/estilo.css") all and (min-width: 1024px);
+	// firula das letras e ficha tecnica
+	@import "acordeon";
 
 
 //
 // RESPONSAVIDADE
 //
-@media screen and (max-width: 320px)
+
+// MOBILE
+@media screen and (max-width: 479px)
 {
 	#domitila,
 	#facebook,
 	#twitter {background: url('sprites-mobile.png') no-repeat;width: 48px;height: 48px;color: rgba(0,0,0,0); }
 
 	#domitila {font-size: 44px}
-	#twitter,
-	#facebook{
-		position: absolute;
-	}
 	#facebook {background-position: 0 -48px;}
 	#twitter {background-position: 0 -96px;margin-left: 70px}
 
@@ -116,6 +113,7 @@ body {
 		z-index: 2;
 		top: 0;
 	}
+
 	nav {display: none;}
 	article section {
 		float: left;
@@ -132,6 +130,8 @@ body {
 		iframe{margin-top: 4.5em}
 	}
 
+	.slide{width: 300px}
+
 	aside p{display: none;}
 	aside h1 {
 		position: relative;
@@ -140,67 +140,22 @@ body {
 		-ms-transform: rotate(270deg);
 		-webkit-transform: rotate(270deg);
 	}
-}
-@media screen and (min-width: 321px)
-{
-	#tit-mobi,
-	.menu,
-	.menuBtn {display: none;}
 
-	#inicio small{color: $bege}
-
-}
-@media screen and (min-width: 480px)
-{
-	article section {
-		float: left;
-		width: 33%;
-	}
-
-	#domitila,
-	#facebook,
-	#twitter {background: url('sprites-tablet.png') no-repeat;width: 56px;height: 56px;color: rgba(0,0,0,0); }
-
-	#domitila {font-size: 52px}
-	#twitter,
-	#facebook{
-		position: absolute;
-	}
-	#facebook {background-position: 0 -56px;}
-	#twitter {background-position: 0 -112px;margin-left: 90px}
-
-
-	#inicio {
-		padding: 5px;
-
-//		.slide h1:first-child,
-		h1 {
-			margin: 0;
-			padding: 0
-		}
-		p {
-			margin: 7em 1.6em 0;
-			float: left;
-		}
-
-	}
-	#som {
-		display: block !important;
-	}
-
-
-}
-@media screen and (max-width: 480px)
-{
-	// firula das letras e ficha tecnica
-	@import "acordeon";
+	#contato{font-size: 2em}
+	#site{font-size: 3.9em}
 
 }
 
 
 // TABLET
-@media screen and (min-width: 479px)
+@media screen and (min-width: 480px)
 {
+	#tit-mobi,
+	.menu,
+	.menuBtn {display: none;}
+
+	#som {display: block !important;}
+
 	.slide{margin: 5em 0;}
 	nav {
 		position: fixed;
@@ -223,6 +178,29 @@ body {
 				color: $amarelo;
 			}
 		}
+
+	#inicio {
+		padding: 5px;
+
+		h1 {
+			margin: 0;
+			padding: 0
+		}
+		p {
+			margin: 7em 1.6em 0;
+			float: left;
+		}
+
+	}
+
+	article section {
+		float: left;
+		width: 33%;
+	}
+
+	#contato{font-size: 3em}
+	#site{font-size: 5.9em}
+
 }
 
 @media screen and (min-width: 479px) and (max-width: 639px)
@@ -230,27 +208,75 @@ body {
 	#inicio {
 		background: url('intro.480x640.jpg') no-repeat;
 	}
+	.slide{width: 450px}
+
+	#domitila,
+	#facebook,
+	#twitter {background: url('sprites-tablet.png') no-repeat;width: 56px;height: 56px;color: rgba(0,0,0,0); }
+
+	#domitila {font-size: 52px}
+	#facebook {background-position: 0 -56px;}
+	#twitter {background-position: 0 -112px;margin-left: 90px}
 }
 
-@media screen and (min-width: 639px)
+
+// IPAD
+@media screen and (min-width: 640px)
 {
-	#inicio {
-		background: url('intro.640x480.jpg') no-repeat;
-	}
-
-	#inicio {
-		padding: 10px;
-
-		small {color: $oliva}
-		p { margin: 0 1em 9em 0;}
-	}
-
 	.tabs {display: block;}
 	.ac {display: none;}
 	@import "tabs";
-	div.dir {
-		float: right;
-		left: 250px;
-		width: 400px;
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px)
+{
+	#inicio {
+		padding: 10px;
+		background: url('intro.640x480.jpg') no-repeat;
+
+		small {color: $oliva}
+		p { margin: 0 1em 9.2em 0;}
 	}
+	.slide{width: 590px;}
+}
+
+
+// DESKTOP
+@media screen and (min-width: 768px)
+{
+	#domitila,
+	#facebook,
+	#twitter {background: url('sprites-desktop.png') no-repeat;width: 72px;height: 72px;color: rgba(0,0,0,0); }
+
+	#domitila {font-size: 52px;float: left;}
+
+	.slide h1{font-size: 3.5em}
+	h1 small{display: block;}
+	p{font-size: 1.4em;}
+	aside h1{line-height: 0.5em}
+	sup small{display: inline;}
+
+	p.desc {width: 70%; margin-left: 5%}
+
+	#facebook {background-position: 0 -72px;}
+	#twitter {background-position: 0 -144px;margin-left: 160px}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+{
+	#inicio {
+		background: url('intro.768x1024.jpg') no-repeat;
+		p{margin: 8.5em 2.4em 0 }
+	}
+	.slide{width: 720px}
+}
+
+@media screen and (min-width: 1024px)
+{
+	#inicio {
+		background: url('intro.1024x768.jpg') no-repeat;
+		p { margin: 1em 1em 13em 0;}
+	}
+	.slide{width: 986px}
 }

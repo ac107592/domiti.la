@@ -1,7 +1,8 @@
 html, body, div,
-h1, p, strong, blockquote,
+h1, p, strong, small,
 section, article, nav, aside,
-a, img,
+a, img, iframe,
+table, td,
 ul, li {
 	margin: 0;
 	padding: 0;
@@ -117,13 +118,13 @@ button::-moz-focus-inner {
 //	vertical-align: top;
 //}
 
-//table {
-//	border-collapse: collapse;
-//	border-spacing: 0;
-//}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 
-iframe { overflow:hidden; border: none; width: 100%; min-height: 190px }
+iframe { overflow:hidden; border: none; width: 100%; min-height: 220px }
 article iframe { width: 96%; }
 
 .outline {

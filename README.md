@@ -59,7 +59,6 @@ chmod u+x publica.sh
 ## MÉTODOS
 
 	Mobile first
-	Imagens SVG
 	Microformats
 	Safari Web Content Guide
 	HTML Outline
@@ -87,14 +86,7 @@ chmod u+x publica.sh
 
 # TODO
 
-- [JS]	playlist
 - [CSS]	menu mobi
-- [CSS]	tipografia
-- [CSS]	responsividade / fluida
-- [JS]	tela modal
-- [JS]	parallax
-- [JPG] fundo
-- [JS]	imagens responsivas
 - [GLG]	Analitycs
 - [GLG]	Webmaster tools
 

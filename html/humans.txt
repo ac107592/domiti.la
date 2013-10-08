@@ -1,6 +1,6 @@
 /* SITE */
 
-	Atualização: 29 / 9 / 13
+	Atualização: 8 / 10 / 13
 	Versão:      Defenestração (0.1)
 	Língua:      Gaudéria
 	Doctype:     HTML5
@@ -75,7 +75,6 @@
 /* MÉTODOS */
 
 	Mobile first
-	Imagens SVG
 	Microformats
 	Safari Web Content Guide
 	HTML Outline
