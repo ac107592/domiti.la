@@ -81,11 +81,3 @@ chmod u+x publica.sh
 	BASH, uglifyjs: Compilar e compactar o JS
 	Web Developer:  Extensão do firefox de auxílio ao desenvolvimento
 	Outliner:       Extensão do chrome de auxílio ao SEO
-
-
-
-# TODO
-
-- [GLG]	Analitycs
-- [GLG]	Webmaster tools
-
