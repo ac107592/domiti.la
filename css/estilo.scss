@@ -24,9 +24,7 @@ $sideNavWidth: 180px;
 	h1:first-child {padding-top: 0.4em;}
 }
 .tabs {display: none;}
-.clear-shadow {
-	clear: both;
-}
+.clear-shadow {clear: both;}
 
 
 body {
@@ -42,12 +40,7 @@ body {
 		font-weight: bold;
 	}
 
-	em {
-		color: lighten($marrom, 20%)
-	}
-
-
-//	#inicio small{color: $bege}
+	em {color: lighten($marrom, 20%)}
 
 
 
@@ -73,7 +66,7 @@ body {
 
 
 #conteudo{
-	min-height:100%; position:relative; z-index:1; background:$amarelo; padding:0 4px 5em;
+	min-height:100%; max-width: 996px; position:relative; z-index:1; padding:0 4px 5em; margin: 0 auto; background: $amarelo;
 	transition:0.4s cubic-bezier(0.335,0.815,0.470,1); width:98%;
 	#bPlaylist:checked ~ &{ -webkit-transform:translatex($sideNavWidth); transform:translatex($sideNavWidth); border-radius:8px; }
 	#bMenu:checked ~	 &{ -webkit-transform:translatex(-$sideNavWidth); transform:translatex(-$sideNavWidth); border-radius:8px; }	
@@ -98,7 +91,6 @@ blockquote {
 	padding: 0.25em 40px;
 	line-height: 1.45em;
 	position: relative;
-	color: $roxo;
 
 	&:before {
 		display: block;
@@ -123,6 +115,14 @@ blockquote {
 			content: "\2014 \2009";
 			position: absolute;
 			left: 3em;
+		}
+		a {
+			text-decoration: underline;
+			font-weight: bold;
+			&:hover {
+				color: $bege;
+				background: $marrom;
+			}
 		}
 	}
 
@@ -338,30 +338,49 @@ blockquote {
 
 @media screen and (min-width: 1024px)
 {
+	body {
+		background: $amarelo url('fundo.jpg') no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover
+	}
 	#inicio {
 		background: url('intro.1024x768.jpg') no-repeat;
-		p { margin: 1em 1em 13em 0;}
+		p { margin: 1em 1em 13em 0; max-width: 946px;}
 	}
 	.slide{width: 986px}
+	nav {width:996px}
+
+	#conteudo {background: rgba(255, 255, 0, 0.2);}
+
+	article section {
+		margin: 0 2%;
+		width: 29%;
+	}
 
 	#info,
 	#ficha,
 	#fofoca {
 		width: 946px;
-		height: 350px
-	}
-
-	#amantes {
-background-image:  url('amantes-1024x768.jpg'), url('amantes-1024x768.jpg');
-background-position: -170px 0, 700px 0;
-background-repeat: no-repeat;
-
-		width: 500px;
-		padding: 0 20%
+		height: 350px;
+		margin: 0 auto;
 	}
 
 	#info {background: url('info-1024x768.jpg');}
 	#ficha {background: url('ficha-1024x768.jpg');}
 	#fofoca {background: url('disseram-1024x768.jpg');}
+
+	#amantes {
+		background-image:  url('amantes-1024x768.png'), url('amantes-1024x768.png');
+		background-position: -170px 0, 700px 0;
+		background-repeat: no-repeat;
+
+		width: 500px;
+		padding: 0 20%;
+		margin: 0 auto;
+	}
+
+	#banda p {margin: 0 40px;}
 
 }
