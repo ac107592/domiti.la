@@ -323,6 +323,7 @@ blockquote {
 
 	#info,
 	#ficha,
+	#sobre,
 	#fofoca {
 		width: 690px;
 		height: 245px
@@ -330,9 +331,16 @@ blockquote {
 
 	#info {background: url('info-768x1024.jpg') ;}
 	#ficha {background: url('ficha-768x1024.jpg') ;}
+	#sobre {background: url('sobre-768x1024.jpg') ;}
 	#fofoca {background: url('disseram-768x1024.jpg');}
 
 	#amantes {padding: 0 3em}
+
+	#rodape {
+		background: url('rodape-768x1024.jpg');
+		width: 690px;
+		height: 460px;
+	}
 
 }
 
@@ -361,6 +369,7 @@ blockquote {
 
 	#info,
 	#ficha,
+	#sobre,
 	#fofoca {
 		width: 946px;
 		height: 350px;
@@ -369,10 +378,11 @@ blockquote {
 
 	#info {background: url('info-1024x768.jpg');}
 	#ficha {background: url('ficha-1024x768.jpg');}
+	#sobre {background: url('sobre-1024x768.jpg');}
 	#fofoca {background: url('disseram-1024x768.jpg');}
 
 	#amantes {
-		background-image:  url('amantes-1024x768.png'), url('amantes-1024x768.png');
+		background-image: url('amantes-1024x768.png'), url('amantes-1024x768.png');
 		background-position: -170px 0, 700px 0;
 		background-repeat: no-repeat;
 
@@ -382,5 +392,16 @@ blockquote {
 	}
 
 	#banda p {margin: 0 40px;}
+
+	#contato,
+	#site,
+	#facebook { margin-left: 20px;}
+
+	#rodape {
+		background: url('rodape-1024x768.jpg');
+		width: 946px;
+		height: 631px;
+		margin: 0 auto;
+	}
 
 }
