@@ -1,7 +1,7 @@
 /* SITE */
 
-	Atualização: 8 / 10 / 13
-	Versão:      Mequetrefe (1.0)
+	Atualização: 11 / 10 / 13
+	Versão:      Mequetrefe (1.1)
 	Língua:      Gaudéria
 	Doctype:     HTML5
 	Charset:     UTF-8 (sem BOM)
@@ -51,12 +51,6 @@
 
 	developers.google.com/+/web/snippet/
 	schema.org/Event
-
-
-
-/* TIPOGRAFIA */
-
-	google.com/fonts/specimen/Open+Sans
 
 
 

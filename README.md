@@ -38,12 +38,6 @@ chmod u+x publica.sh
 
 
 
-## TIPOGRAFIA
-
-	google.com/fonts/specimen/Open+Sans
-
-
-
 ## FERRAMENTAS ON-LINE EMPREGADAS
 
 	fontsquirrel.com/tools/webfont-generator
