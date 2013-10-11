@@ -42,6 +42,10 @@ body {
 		font-weight: bold;
 	}
 
+	em {
+		color: lighten($marrom, 20%)
+	}
+
 
 //	#inicio small{color: $bege}
 
@@ -83,6 +87,46 @@ body {
 	@import "acordeon";
 
 
+//#disseram{}
+
+blockquote {
+	font-family: Georgia, Garamond, serif;
+	font-size: 1em;
+	font-style: italic;
+	width: 50%;
+	margin: 2em 0 1em;
+	padding: 0.25em 40px;
+	line-height: 1.45em;
+	position: relative;
+	color: $roxo;
+
+	&:before {
+		display: block;
+		content: "\201C";
+		font-size: 80px;
+		position: absolute;
+		left: 0;
+		color: $oliva;
+	}
+
+}
+	cite {
+		color: $marrom;
+		font-size: small;
+		font-style: normal;
+		line-height: 1.2em;
+		display: block;
+		margin-top: 5px;
+		padding-left: 2em;
+
+		&:before {
+			content: "\2014 \2009";
+			position: absolute;
+			left: 3em;
+		}
+	}
+
+
 //
 // RESPONSAVIDADE
 //
@@ -121,6 +165,7 @@ body {
 	}
 
 	@import "menumobile";
+	blockquote{width: 90%;}
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px)
@@ -212,6 +257,7 @@ body {
 	#domitila {font-size: 52px}
 	#facebook {background-position: 0 -56px;}
 	#twitter {background-position: 0 -112px;margin-left: 90px}
+	blockquote{width: 80%;}
 }
 
 @media screen and (min-width: 479px) and (max-width: 639px)
@@ -276,13 +322,15 @@ body {
 
 
 	#info,
-	#ficha {
+	#ficha,
+	#fofoca {
 		width: 690px;
 		height: 245px
 	}
 
 	#info {background: url('info-768x1024.jpg') ;}
 	#ficha {background: url('ficha-768x1024.jpg') ;}
+	#fofoca {background: url('disseram-768x1024.jpg');}
 
 	#amantes {padding: 0 3em}
 
@@ -297,12 +345,11 @@ body {
 	.slide{width: 986px}
 
 	#info,
-	#ficha {
+	#ficha,
+	#fofoca {
 		width: 946px;
 		height: 350px
 	}
-
-	#info {background: url('info-1024x768.jpg') no-repeat;}
 
 	#amantes {
 background-image:  url('amantes-1024x768.jpg'), url('amantes-1024x768.jpg');
@@ -313,6 +360,8 @@ background-repeat: no-repeat;
 		padding: 0 20%
 	}
 
-	#ficha {background: url('ficha-1024x768.jpg') no-repeat;}
+	#info {background: url('info-1024x768.jpg');}
+	#ficha {background: url('ficha-1024x768.jpg');}
+	#fofoca {background: url('disseram-1024x768.jpg');}
 
 }
