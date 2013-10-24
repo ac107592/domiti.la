@@ -274,6 +274,10 @@ blockquote {
 		background: url('intro.480x640.jpg') no-repeat;
 	}
 	.slide{width: 450px}
+	article iframe {
+		height: 253px;
+		width:450px;
+	}
 }
 
 
@@ -297,6 +301,10 @@ blockquote {
 		p { margin: 0 1em 9.2em 0;}
 	}
 	.slide{width: 590px;}
+	article iframe {
+		height: 326px;
+		width:580px;
+	}
 }
 
 
@@ -328,6 +336,10 @@ blockquote {
 	}
 	.slide{width: 720px}
 
+	article iframe {
+		height: 388px;
+		width:690px;
+	}
 
 	#info,
 	#ficha,
@@ -370,6 +382,10 @@ blockquote {
 
 	#conteudo {background: rgba(255, 255, 0, 0.2);}
 
+	article iframe {
+		height: 554px;
+		width:986px;
+	}
 	article section {
 		margin: 0 2%;
 		width: 29%;
